@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ros-2.github.io/Quickler/sitemap.xml

@@ -1,0 +1,35 @@
+# Quickler – Automation Consulting
+
+> Automation consultant based in Dundee, Scotland helping organisations automate repetitive tasks with a 10× return on investment.
+
+## Services
+
+I help organisations identify and automate repetitive manual tasks, building systems that deliver an average 10× return on time invested. Every hour I invest saves clients 10 hours of staff time annually.
+
+### Specializations
+- Process Automation
+- Data Processing Automation
+- Reporting Systems
+- Grant Writing Automation
+- Production Tracking Systems
+
+## Contact
+
+Based in Dundee, Scotland, UK
+Website: https://ros-2.github.io/Quickler/
+Contact form available at: https://ros-2.github.io/Quickler/#contact
+
+## Recent Projects
+
+- Fundraising Automation: Built system for charity to automate grant applications, saving 6 working days per year
+- Production Tracking: Created unified tracker for publishing house, saving 13 working days per year
+- Sales Data Restructuring: Rebuilt database for charitable enterprise, saving 13 working days per year
+- Till Data Automation: Automated sales data processing for charity shops, saving 11 working days per year
+
+## Background
+
+Electrical and Mechanical Engineering degree from University of Strathclyde. Previously worked at Dijuno, an AI analytics startup serving companies including Coca-Cola, where I developed expertise in LLM testing, prompt engineering, and Python automation.
+
+## Technologies
+
+Google Applications Script, Python, Claude, Looker Studio, Custom GPTs

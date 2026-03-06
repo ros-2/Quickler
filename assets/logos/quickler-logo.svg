@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 52" height="52" role="img" aria-label="Quickler">
+  <defs>
+    <linearGradient id="qgrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#312E90"/>
+      <stop offset="50%"  stop-color="#5B6FC1"/>
+      <stop offset="100%" stop-color="#7B2880"/>
+    </linearGradient>
+  </defs>
+  <text
+    x="0"
+    y="40"
+    font-family="'DM Sans', 'Segoe UI', sans-serif"
+    font-weight="700"
+    font-size="42"
+    letter-spacing="-1"
+    fill="url(#qgrad)"
+  >Quickler</text>
+</svg>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NM61T48RDV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-NM61T48RDV');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Contact | Quickler | Start Your Workflow Project</title>
+    <meta name="title" content="Contact | Quickler | Start Your Workflow Project">
+    <meta name="description" content="Share your workflow and Quickler will suggest practical next steps for custom automation or internal tools.">
+    <meta name="keywords" content="contact Quickler, workflow enquiry, custom software consultant, Scotland">
+    <meta name="author" content="Philip Ross">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://quickler.com/pages/contact.html">
+    <meta property="og:title" content="Contact | Quickler | Start Your Workflow Project">
+    <meta property="og:description" content="Get in touch to discuss repetitive admin, document workflows, and internal automation systems.">
+    <meta property="og:locale" content="en_GB">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://quickler.com/pages/contact.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="/" class="nav-name">
+            <img src="/assets/logos/quickler-logo.svg" alt="Quickler" style="height: 38px;">
+        </a>
+        <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('nav').classList.toggle('nav-open')">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <div class="nav-menu">
+            <a href="/">Home</a>
+            <a href="/pages/services.html">Services</a>
+            <a href="/pages/projects.html">Case Studies</a>
+            <a href="/pages/about.html">About</a>
+            <a href="/pages/contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <section id="top" style="padding-top: 140px; text-align: center;">
+        <div style="max-width: 600px; margin: 0 auto;">
+            <p class="section-label">Get In Touch</p>
+            <h2>Tell me what is slowing your team down</h2>
+
+            <p style="margin-bottom: 18px; color: var(--text-secondary);">Email directly at <a href="mailto:philip@quickler.com" style="color: var(--accent); text-decoration: none;">philip@quickler.com</a> or use the form below.</p>
+            <p style="margin-bottom: 32px; color: var(--text-secondary); font-size: 0.95rem;">Include: what your current process looks like, where time is lost, and what “good” would look like.</p>
+
+            <form class="contact-form" id="contact-form" action="https://formspree.io/f/mjknoeqd" method="POST">
+                <div class="form-group">
+                    <label for="email">Your email</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tell me about the processes you'd like to automate..." required></textarea>
+                </div>
+
+                <div class="form-submit">
+                    <button type="submit" class="btn btn-primary" id="submit-btn">Send Message</button>
+                </div>
+            </form>
+
+            <p style="margin-top: 22px; color: var(--text-muted); font-size: 0.9rem;">I usually reply within one working day.</p>
+        </div>
+    </section>
+
+    <footer style="text-align: center;">
+        <p>Quickler · Scotland · <a href="mailto:philip@quickler.com">philip@quickler.com</a> · <a href="#top">Back to top ↑</a></p>
+        <p class="footer-note">Working days based on 7.5-hour calculation (37.5-hour working week)</p>
+    </footer>
+
+    <script src="/js/contact-form.js"></script>
+    <script src="/js/analytics-events.js"></script>
+</body>
+</html>
