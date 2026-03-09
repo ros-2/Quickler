@@ -51,6 +51,7 @@ body {
     font-size: 17px;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 body::before {
@@ -311,6 +312,10 @@ body > section#top:first-of-type {
     flex-wrap: wrap;
     gap: 14px;
     margin-top: 30px;
+}
+
+.hero-actions .btn {
+    min-width: 0;
 }
 
 .hero-points {
@@ -974,6 +979,7 @@ footer a {
 
     .nav-menu a {
         border-radius: 16px;
+        padding: 14px 16px;
     }
 
     .hero,
@@ -985,6 +991,13 @@ footer a {
         grid-template-columns: 1fr;
     }
 
+    .fit-grid,
+    .proof-grid,
+    .pricing-grid,
+    .card-link-grid {
+        grid-template-columns: 1fr;
+    }
+
     .section-header {
         flex-direction: column;
         align-items: start;
@@ -992,6 +1005,14 @@ footer a {
 
     .section-stats {
         justify-content: start;
+    }
+
+    .section-stats,
+    .metric-strip,
+    .detail-meta,
+    .project-meta,
+    .project-stats {
+        gap: 8px;
     }
 }
 
@@ -1027,6 +1048,20 @@ footer a {
         border-radius: 22px;
     }
 
+    h1 {
+        font-size: clamp(2.45rem, 10vw, 3.5rem);
+        line-height: 1;
+    }
+
+    h2 {
+        font-size: clamp(1.75rem, 8vw, 2.5rem);
+        line-height: 1.06;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
     .hero-content,
     .impact-box,
     .page-shell,
@@ -1034,6 +1069,133 @@ footer a {
     .contact-panel,
     .contact-form-shell {
         padding: 28px;
+    }
+
+    .nav-name img {
+        height: 32px;
+    }
+
+    .hero {
+        gap: 18px;
+        padding-top: 52px;
+    }
+
+    .hero-text {
+        font-size: 1.05rem;
+        margin-top: 18px;
+    }
+
+    .hero-credentials {
+        font-size: 0.92rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-actions .btn,
+    .cta-banner .btn,
+    .cta-content .btn {
+        width: 100%;
+    }
+
+    .hero-points {
+        margin-top: 22px;
+        gap: 8px;
+    }
+
+    .impact-box {
+        padding: 30px 28px;
+    }
+
+    .impact-ratio {
+        margin: 22px 0 10px;
+    }
+
+    .impact-number {
+        font-size: clamp(3.2rem, 18vw, 4.6rem);
+    }
+
+    .impact-label,
+    .project-category,
+    .project-date,
+    .project-client,
+    .project-stat,
+    .stat-label,
+    .card-link-meta,
+    .detail-chip-label {
+        font-size: 0.78rem;
+    }
+
+    .content-text,
+    .about-text p,
+    .service-description,
+    .faq-answer,
+    .project-content p,
+    .pricing-info p,
+    .page-lede,
+    .detail-body p,
+    .detail-body li,
+    .contact-copy {
+        font-size: 0.98rem;
+        line-height: 1.72;
+    }
+
+    .benefit-card,
+    .fit-card,
+    .proof-card,
+    .pricing-box,
+    .contact-methods,
+    .service-item,
+    .card-link,
+    .contact-panel,
+    .contact-form-shell,
+    .project-summary {
+        padding: 22px;
+    }
+
+    .page-shell,
+    .detail-shell,
+    .contact-panel,
+    .contact-form-shell,
+    .cta-banner {
+        padding: 26px;
+    }
+
+    .section-label,
+    .hero-label,
+    .eyebrow {
+        margin-bottom: 14px;
+    }
+
+    .section-header {
+        gap: 12px;
+        margin-bottom: 22px;
+    }
+
+    .section-stats {
+        width: 100%;
+    }
+
+    .metric-pill,
+    .detail-chip {
+        font-size: 0.8rem;
+        padding: 8px 11px;
+    }
+
+    .project-summary {
+        gap: 14px;
+    }
+
+    .project-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tab-labels {
+        padding: 4px;
+        gap: 4px;
     }
 
     .tab-labels {
@@ -1049,5 +1211,109 @@ footer a {
     footer {
         width: min(calc(100% - 28px), var(--content-width));
         margin-bottom: 34px;
+    }
+}
+
+@media (max-width: 560px) {
+    nav {
+        top: 10px;
+        margin-top: 10px;
+        padding: 10px 12px 10px 14px;
+    }
+
+    .nav-toggle {
+        width: 42px;
+        height: 42px;
+    }
+
+    .nav-menu {
+        top: 72px;
+        right: 10px;
+        left: 10px;
+        width: auto;
+        border-radius: 22px;
+    }
+
+    section {
+        width: min(calc(100% - 22px), var(--content-width));
+        padding: 60px 0;
+    }
+
+    body > section#top:first-of-type {
+        padding-top: 112px !important;
+    }
+
+    .hero-content,
+    .impact-box,
+    .benefit-card,
+    .fit-card,
+    .proof-card,
+    .pricing-box,
+    .contact-methods,
+    .service-item,
+    .project-summary,
+    .page-shell,
+    .card-link,
+    .detail-shell,
+    .contact-panel,
+    .contact-form-shell,
+    .cta-banner {
+        border-radius: 20px;
+    }
+
+    .hero-content,
+    .impact-box,
+    .page-shell,
+    .detail-shell,
+    .contact-panel,
+    .contact-form-shell,
+    .cta-banner {
+        padding: 22px;
+    }
+
+    .benefit-card,
+    .fit-card,
+    .proof-card,
+    .pricing-box,
+    .contact-methods,
+    .service-item,
+    .card-link,
+    .project-summary {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: clamp(2.15rem, 11vw, 2.85rem);
+    }
+
+    h2 {
+        font-size: clamp(1.55rem, 8vw, 2rem);
+    }
+
+    .hero-actions {
+        margin-top: 24px;
+    }
+
+    .btn {
+        min-height: 46px;
+        padding: 11px 16px;
+        font-size: 0.92rem;
+    }
+
+    .proof-card strong {
+        font-size: 1.95rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 14px 14px;
+        border-radius: 14px;
+    }
+
+    footer {
+        width: min(calc(100% - 22px), var(--content-width));
+        margin-top: 18px;
+        margin-bottom: 26px;
+        font-size: 0.88rem;
     }
 }
