@@ -314,6 +314,68 @@ body > section#top:first-of-type {
     font-size: 0.98rem;
 }
 
+.membership-strip {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.membership-label {
+    color: var(--ink-soft);
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.membership-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.membership-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 13px;
+    border-radius: 999px;
+    border: 1px solid rgba(24, 52, 132, 0.08);
+    background: rgba(255, 255, 255, 0.56);
+    text-decoration: none;
+    color: var(--ink);
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.membership-badge:hover,
+.membership-badge:focus-visible {
+    transform: translateY(-1px);
+    border-color: var(--line-strong);
+    box-shadow: var(--shadow-soft);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.membership-badge img {
+    width: auto;
+    height: 19px;
+    display: block;
+    filter: grayscale(1) contrast(1.05);
+    opacity: 0.9;
+}
+
+.membership-badge-fsb img {
+    height: 18px;
+    border-radius: 4px;
+}
+
+.membership-badge span {
+    font-size: 0.84rem;
+    font-weight: 600;
+    color: var(--ink-soft);
+}
+
 .hero-actions {
     display: flex;
     flex-wrap: wrap;
@@ -1097,6 +1159,11 @@ footer a {
     .hero,
     .contact-grid {
         grid-template-columns: 1fr;
+    }
+
+    .membership-strip {
+        align-items: start;
+        flex-direction: column;
     }
 
     .benefits-grid {
