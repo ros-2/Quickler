@@ -33,7 +33,7 @@ The core problem: engineers capture information on site in rough form, then retu
 
 **Pilot sign-up:** Quickler is looking for a small number of initial teams in inspections, surveys, site visits, compliance, and maintenance. The best fit is a team that captures notes, photos, voice, or forms during the job and still rewrites the final report later at a desk. Early teams get direct founder support and help shape the first strong product workflow. Apply at https://quickler.co/pages/contact.html
 
-**Demo:** https://demo.quickler.co/
+**Demo:** https://demo.lochross.com/
 
 ---
 
@@ -51,19 +51,7 @@ Quickler is product-led now, but grounded in real delivered workflow work rather
 
 ## Case Studies
 
-### 1. PO Workflow Platform
-**Client type:** Quantum computing startup
-**Delivered:** February 2026
-**Build time:** 36 hours
-**Outcome:** End-to-end PO workflow
-
-Quickler built a purchase order platform with guided form entry, saved vendors and addresses, and line-item memory for faster repeat orders. Approval routing by email, approver signature handling, branded PDF generation, and status tracking were added so the workflow could move from pending to approved or denied without disappearing into inboxes. Paperless indexing links, history cloning, and setup automation were also integrated so new environments could start quickly with minimal manual steps.
-
-**URL:** https://quickler.co/pages/project-po-workflow-platform.html
-
----
-
-### 2. Fundraising Automation
+### 1. Fundraising Automation
 **Client type:** Multi-million pound charitable enterprise
 **Delivered:** November 2025
 **Build time:** 2 hours
@@ -72,6 +60,18 @@ Quickler built a purchase order platform with guided form entry, saved vendors a
 Grant applications took a full day each because staff were repeatedly finding funders and re-entering the same charity information into similar forms. Quickler built a system that stored the charity's core information and created draft forms automatically. Staff could enter project needs, get matching funders, and start from pre-filled applications instead of blank pages. Eight hours dropped to roughly ten minutes. Across six forms per year, that translated into 6.5 working days returned to higher-value charitable work.
 
 **URL:** https://quickler.co/pages/project-fundraising-charity.html
+
+---
+
+### 2. Production Tracking Streamlining
+**Client type:** Publishing house
+**Delivered:** November 2025
+**Build time:** 4 hours
+**Time saved:** 14 working days per year
+
+Book status information was scattered across five spreadsheets. Checking whether a book would meet its deadline meant searching multiple files and chasing several people for updates. Quickler built one tracker showing each book's stage, owner, and deadline, with clear visual signals for items at risk. Two hours per week of status chasing disappeared. The result was not just speed, but much clearer publishing operations.
+
+**URL:** https://quickler.co/pages/project-production-tracking.html
 
 ---
 
@@ -87,19 +87,7 @@ A busy charity worker was losing roughly a week per year to repeat fundraising a
 
 ---
 
-### 4. Production Tracking Streamlining
-**Client type:** Publishing house
-**Delivered:** November 2025
-**Build time:** 4 hours
-**Time saved:** 14 working days per year
-
-Book status information was scattered across five spreadsheets. Checking whether a book would meet its deadline meant searching multiple files and chasing several people for updates. Quickler built one tracker showing each book's stage, owner, and deadline, with clear visual signals for items at risk. Two hours per week of status chasing disappeared. The result was not just speed, but much clearer publishing operations.
-
-**URL:** https://quickler.co/pages/project-production-tracking.html
-
----
-
-### 5. Sales Data Restructuring
+### 4. Sales Data Restructuring
 **Client type:** Multi-million pound charitable enterprise
 **Delivered:** December 2025
 **Build time:** 20 hours
@@ -111,7 +99,7 @@ Sales data was trapped in 43,000 formulas across multiple spreadsheets, to the p
 
 ---
 
-### 6. Till Data Automation
+### 5. Till Data Automation
 **Client type:** Multi-million pound charitable enterprise
 **Delivered:** December 2025
 **Build time:** 7 hours
@@ -120,6 +108,18 @@ Sales data was trapped in 43,000 formulas across multiple spreadsheets, to the p
 Two staff members were spending time every week pulling till data, reformatting it, and loading it into the main tracking spreadsheet by hand. Quickler added automation in Google Sheets to process the raw exports and feed the main spreadsheet automatically. Northern Ireland became fully automatic and the Scotland workflow dropped to around twenty minutes weekly. The result was 100 minutes saved per week, or around 11.5 working days recovered each year.
 
 **URL:** https://quickler.co/pages/project-till-data.html
+
+---
+
+### 6. PO Workflow Platform
+**Client type:** Quantum computing startup
+**Delivered:** February 2026
+**Build time:** 36 hours
+**Outcome:** End-to-end PO workflow
+
+Quickler built a purchase order platform with guided form entry, saved vendors and addresses, and line-item memory for faster repeat orders. Approval routing by email, approver signature handling, branded PDF generation, and status tracking were added so the workflow could move from pending to approved or denied without disappearing into inboxes. Paperless indexing links, history cloning, and setup automation were also integrated so new environments could start quickly with minimal manual steps.
+
+**URL:** https://quickler.co/pages/project-po-workflow-platform.html
 
 ---
 
