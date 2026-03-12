@@ -49,6 +49,7 @@
     ],
     "core_problem": "Inspection, survey, site visit, compliance, and maintenance teams capture information on site in rough form, then return to a desk and rewrite it into a formal report. Quickler closes that gap.",
     "pilot_offer": "Quickler is looking for a small number of initial teams in inspections, surveys, site visits, compliance, and maintenance. Early teams get direct founder support and help shape the first strong product workflow.",
+    "current_scope": "Focused early pilot around one repeated report workflow. Not a broad enterprise rollout.",
     "pillars": [
       {
         "name": "Chat-first capture",
@@ -76,7 +77,8 @@
       "Your team writes similar inspection, survey, site visit, compliance, or maintenance reports repeatedly",
       "Notes, photos, voice, or forms are captured during the job",
       "The final report is still rebuilt later at a desk",
-      "You can trial an early workflow and give product feedback"
+      "You can trial an early workflow and give product feedback",
+      "You can share real examples of the current report or inputs"
     ],
     "not_a_fit": [
       "Teams looking for a broad enterprise platform from day one",

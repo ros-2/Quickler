@@ -18,7 +18,7 @@ Quickler Reports removes double-handling from report writing in inspections, sur
 
 Early pilot validation. Quickler is working with real technical teams to validate the first reporting niche and prove the capture-to-draft loop before full productisation.
 
-The focus is now the reporting product itself: validating the first niche and tightening the capture-to-report loop for early teams.
+The focus is now the reporting product itself: validating the first niche and tightening the capture-to-report loop for early teams. The current offer should be understood as a focused pilot around one repeated workflow, not a broad finished enterprise platform.
 
 ## Pilot Sign-Up
 
@@ -29,6 +29,7 @@ Quickler is looking for a small number of initial teams in inspections, surveys,
 - Notes, photos, voice, or forms are captured during the job
 - The formal report is still rebuilt later at a desk
 - You are willing to trial an early workflow and give feedback
+- You can share real examples of the current report or inputs
 
 **Primary CTA:** Apply for an early pilot at https://quickler.co/pages/contact.html
 
