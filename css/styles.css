@@ -551,6 +551,7 @@ body > section#top:first-of-type {
 .benefit-card p,
 .benefit-card ul,
 .fit-card ul,
+.fit-card p,
 .proof-card p,
 .card-link-copy {
     color: var(--ink);
@@ -1122,6 +1123,97 @@ footer a {
     margin: 12px auto 0;
 }
 
+.home-fit-grid,
+.home-pilot-fit-grid,
+.home-use-case-grid,
+.home-proof-grid,
+.home-workflow-grid,
+.home-pilot-steps {
+    display: grid;
+    gap: 18px;
+}
+
+.home-fit-grid {
+    grid-template-columns: minmax(340px, 1.2fr) repeat(2, minmax(0, 0.9fr));
+}
+
+.home-pilot-fit-grid {
+    grid-template-columns: minmax(320px, 1.15fr) repeat(2, minmax(0, 0.85fr));
+}
+
+.fit-card-featured {
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(247, 250, 255, 0.82)),
+        linear-gradient(135deg, rgba(18, 62, 203, 0.12), rgba(255, 46, 168, 0.08));
+}
+
+.home-use-case-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.home-workflow-shell {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1.38fr);
+    gap: 18px;
+    align-items: stretch;
+}
+
+.home-workflow-intro {
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    background:
+        linear-gradient(160deg, rgba(12, 23, 52, 0.98), rgba(24, 44, 113, 0.94) 56%, rgba(46, 43, 204, 0.9) 100%);
+    color: #f5f8ff;
+    box-shadow: var(--shadow-card);
+    padding: clamp(24px, 3vw, 34px);
+}
+
+.home-workflow-intro h3 {
+    color: #ffffff;
+    margin-bottom: 14px;
+}
+
+.home-workflow-intro p {
+    color: rgba(232, 241, 255, 0.84);
+    max-width: 28rem;
+}
+
+.home-workflow-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.home-pilot-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(280px, 0.8fr);
+    gap: 18px;
+    align-items: start;
+}
+
+.home-pilot-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.home-pilot-aside {
+    position: sticky;
+    top: 108px;
+}
+
+.home-pilot-aside .proof-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    justify-content: space-between;
+}
+
+.home-pilot-aside .btn {
+    width: 100%;
+}
+
+.home-proof-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 @media (max-width: 980px) {
     nav {
         top: max(10px, env(safe-area-inset-top, 0px));
@@ -1174,6 +1266,21 @@ footer a {
 
     .benefits-grid {
         grid-template-columns: 1fr;
+    }
+
+    .home-fit-grid,
+    .home-pilot-fit-grid,
+    .home-use-case-grid,
+    .home-workflow-shell,
+    .home-workflow-grid,
+    .home-pilot-layout,
+    .home-pilot-steps,
+    .home-proof-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .home-pilot-aside {
+        position: static;
     }
 
     .fit-grid,
@@ -1498,6 +1605,26 @@ footer a {
 @media (min-width: 981px) and (max-width: 1200px) {
     .hero {
         grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+    }
+
+    .home-fit-grid,
+    .home-pilot-fit-grid,
+    .home-proof-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .home-workflow-shell,
+    .home-pilot-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .home-workflow-grid,
+    .home-pilot-steps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .home-pilot-aside {
+        position: static;
     }
 
     .card-link-grid {
