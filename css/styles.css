@@ -443,6 +443,14 @@ body > section#top:first-of-type {
     margin: 28px 0 12px;
 }
 
+.impact-title {
+    margin: 24px 0 14px;
+    color: #ffffff;
+    font-size: clamp(1.8rem, 2.5vw, 2.7rem);
+    line-height: 1.04;
+    max-width: 10ch;
+}
+
 .impact-number {
     display: inline-block;
     font-family: "DM Sans", sans-serif;
@@ -591,8 +599,8 @@ body > section#top:first-of-type {
     display: block;
     margin-bottom: 12px;
     font-family: "DM Sans", sans-serif;
-    font-size: 2.2rem;
-    line-height: 0.96;
+    font-size: 1.2rem;
+    line-height: 1.08;
     color: var(--accent);
 }
 
@@ -1402,6 +1410,11 @@ footer a {
         margin: 22px 0 10px;
     }
 
+    .impact-title {
+        font-size: clamp(1.55rem, 7vw, 2.1rem);
+        margin: 20px 0 12px;
+    }
+
     .impact-number {
         font-size: clamp(3.2rem, 18vw, 4.6rem);
     }
@@ -1586,7 +1599,7 @@ footer a {
     }
 
     .proof-card strong {
-        font-size: 1.95rem;
+        font-size: 1.1rem;
     }
 
     .form-group input,
