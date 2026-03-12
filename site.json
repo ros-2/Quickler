@@ -4,10 +4,11 @@
   "site": {
     "name": "Quickler Reports",
     "url": "https://quickler.co/",
-    "description": "Chat-first technical reporting product for survey teams, engineers, and compliance professionals. Capture site notes, photos, and voice on site — Quickler structures them into a near-finished report.",
+    "description": "Early-pilot reporting product for technical and field-based teams. Capture site notes, photos, and voice on site — Quickler structures them into a near-finished report.",
     "stage": "early_pilot",
     "demo_url": "https://demo.quickler.co/",
-    "contact_email": "philip@quickler.co"
+    "contact_email": "philip@quickler.co",
+    "primary_cta": "Apply for an early pilot"
   },
   "company": {
     "legal_name": "Quickler Ltd",
@@ -47,6 +48,7 @@
       "technical teams with repeated reporting workflows"
     ],
     "core_problem": "Technical teams capture information on site in rough form, then return to a desk and rewrite it into a formal report. Quickler closes that gap.",
+    "pilot_offer": "Quickler is looking for a small number of initial teams with repeated reporting workflows. Early teams get direct founder support and help shape the first strong product workflow.",
     "pillars": [
       {
         "name": "Chat-first capture",
@@ -69,6 +71,12 @@
       "Technical teams that produce repeated site or inspection reports",
       "Businesses where notes are captured on site and rewritten later at a desk",
       "Leaders who want faster reporting without forcing staff into clumsy apps"
+    ],
+    "pilot_qualification": [
+      "Your team writes similar reports repeatedly",
+      "Notes, photos, voice, or forms are captured during the job",
+      "The final report is still rebuilt later at a desk",
+      "You can trial an early workflow and give product feedback"
     ],
     "not_a_fit": [
       "Teams looking for a broad enterprise platform from day one",

@@ -18,7 +18,19 @@ Quickler Reports removes double-handling from technical report writing. Engineer
 
 Early pilot validation. Quickler is working with real technical teams to validate the first reporting niche and prove the capture-to-draft loop before full productisation.
 
-A consulting bridge still exists where it helps validate workflows or de-risk the product direction for early adopters.
+The focus is now the reporting product itself: validating the first niche and tightening the capture-to-report loop for early teams.
+
+## Pilot Sign-Up
+
+Quickler is looking for a small number of initial teams with repeated reporting workflows.
+
+**Best pilot fit:**
+- Your team writes similar reports repeatedly
+- Notes, photos, voice, or forms are captured during the job
+- The formal report is still rebuilt later at a desk
+- You are willing to trial an early workflow and give feedback
+
+**Primary CTA:** Apply for an early pilot at https://quickler.co/pages/contact.html
 
 ## Company
 
@@ -39,7 +51,7 @@ Philip Ross — BEng+MEng Electrical and Mechanical Engineering, University of S
 
 ## Background — Delivered Workflow Projects
 
-Before Quickler Reports, the company built bespoke workflow automation systems. Key outcomes:
+Before Quickler Reports became the main focus, the company solved repeated admin and reporting problems in other settings. Key outcomes:
 
 - 51.5 working days per year saved across all delivered projects
 - 12× average return on time invested (hours saved per hour built)
