@@ -14,17 +14,17 @@
     --surface-card-strong: rgba(255, 255, 255, 0.86);
     --line: rgba(24, 52, 132, 0.1);
     --line-strong: rgba(24, 52, 132, 0.18);
-    --accent: #123ecb;
-    --accent-soft: rgba(18, 62, 203, 0.1);
-    --accent-mid: #5b78d6;
-    --highlight: #ff2ea8;
-    --highlight-soft: rgba(255, 46, 168, 0.12);
-    --brand-blue: #1f63ff;
-    --brand-indigo: #2e2bcc;
-    --brand-violet: #7223d2;
-    --brand-pink: #ff2ea8;
-    --brand-gradient: linear-gradient(135deg, #1f63ff 0%, #2e2bcc 48%, #ff2ea8 100%);
-    --brand-gradient-soft: linear-gradient(135deg, rgba(31, 99, 255, 0.14) 0%, rgba(46, 43, 204, 0.12) 48%, rgba(255, 46, 168, 0.12) 100%);
+    --accent: #1a52d0;
+    --accent-soft: rgba(47, 107, 255, 0.1);
+    --accent-mid: #6070d8;
+    --highlight: #F43F8C;
+    --highlight-soft: rgba(244, 63, 140, 0.12);
+    --brand-blue: #2F6BFF;
+    --brand-indigo: #5A4FCF;
+    --brand-violet: #7C3AED;
+    --brand-pink: #F43F8C;
+    --brand-gradient: linear-gradient(90deg, #2F6BFF 0%, #5A4FCF 35%, #7C3AED 65%, #F43F8C 100%);
+    --brand-gradient-soft: linear-gradient(90deg, rgba(47, 107, 255, 0.14) 0%, rgba(90, 79, 207, 0.12) 35%, rgba(124, 58, 237, 0.12) 65%, rgba(244, 63, 140, 0.12) 100%);
     --shadow-soft: 0 26px 60px rgba(18, 41, 111, 0.08);
     --shadow-card: 0 18px 40px rgba(18, 41, 111, 0.07);
     --shadow-hover: 0 28px 58px rgba(18, 41, 111, 0.12);
@@ -47,11 +47,11 @@ html {
 body {
     min-height: 100vh;
     min-height: 100svh;
-    font-family: "Host Grotesk", "Segoe UI", sans-serif;
+    font-family: "Space Grotesk", "Segoe UI", sans-serif;
     background:
-        radial-gradient(circle at top left, rgba(31, 99, 255, 0.18), transparent 26%),
-        radial-gradient(circle at top right, rgba(255, 46, 168, 0.15), transparent 22%),
-        radial-gradient(circle at 50% 18%, rgba(114, 35, 210, 0.12), transparent 34%),
+        radial-gradient(circle at top left, rgba(47, 107, 255, 0.18), transparent 26%),
+        radial-gradient(circle at top right, rgba(244, 63, 140, 0.15), transparent 22%),
+        radial-gradient(circle at 50% 18%, rgba(124, 58, 237, 0.12), transparent 34%),
         linear-gradient(180deg, #fbfdff 0%, #f3f7ff 48%, #edf3ff 100%);
     color: var(--ink);
     line-height: 1.72;
@@ -92,7 +92,7 @@ h3,
 .faq-question,
 .project-title h3,
 .cta-banner h3 {
-    font-family: "DM Sans", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     color: var(--accent);
     letter-spacing: -0.03em;
 }
@@ -194,7 +194,7 @@ nav {
 
 .nav-menu a:hover,
 .nav-menu a:focus-visible {
-    background: rgba(18, 62, 203, 0.08);
+    background: rgba(47, 107, 255, 0.08);
     color: var(--accent);
     transform: translateY(-1px);
 }
@@ -252,8 +252,8 @@ body > section#top:first-of-type {
     inset: 0;
     background:
         linear-gradient(160deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.28) 58%, rgba(255, 255, 255, 0.1) 100%),
-        radial-gradient(circle at right top, rgba(31, 99, 255, 0.16), transparent 30%),
-        radial-gradient(circle at 82% 90%, rgba(255, 46, 168, 0.12), transparent 30%);
+        radial-gradient(circle at right top, rgba(47, 107, 255, 0.16), transparent 30%),
+        radial-gradient(circle at 82% 90%, rgba(244, 63, 140, 0.12), transparent 30%);
     pointer-events: none;
 }
 
@@ -414,15 +414,15 @@ body > section#top:first-of-type {
     width: 8px;
     height: 8px;
     border-radius: 999px;
-    background: linear-gradient(135deg, var(--brand-blue), var(--brand-pink));
+    background: var(--brand-gradient);
     transform: translateY(-50%);
 }
 
 .impact-box {
     background:
-        linear-gradient(155deg, rgba(8, 22, 68, 0.96), rgba(27, 43, 139, 0.92) 56%, rgba(119, 33, 210, 0.9) 100%),
+        linear-gradient(155deg, rgba(8, 22, 68, 0.96), rgba(27, 43, 139, 0.92) 40%, rgba(90, 79, 207, 0.94) 70%, rgba(124, 58, 237, 0.9) 100%),
         radial-gradient(circle at top left, rgba(94, 160, 255, 0.32), transparent 40%),
-        radial-gradient(circle at 82% 88%, rgba(255, 46, 168, 0.28), transparent 28%);
+        radial-gradient(circle at 82% 88%, rgba(244, 63, 140, 0.28), transparent 28%);
     color: #f5f8ff;
     padding: clamp(28px, 4vw, 40px);
     display: flex;
@@ -453,7 +453,7 @@ body > section#top:first-of-type {
 
 .impact-number {
     display: inline-block;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     font-size: clamp(4rem, 10vw, 7rem);
     line-height: 0.9;
     color: #ffffff;
@@ -598,7 +598,7 @@ body > section#top:first-of-type {
 .proof-card strong {
     display: block;
     margin-bottom: 12px;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     font-size: 1.2rem;
     line-height: 1.08;
     color: var(--accent);
@@ -663,7 +663,7 @@ body > section#top:first-of-type {
 #tab-current:checked ~ .tab-labels label[for="tab-current"] {
     background: var(--brand-gradient);
     color: #ffffff;
-    box-shadow: 0 14px 30px rgba(37, 77, 212, 0.24);
+    box-shadow: 0 14px 30px rgba(47, 107, 255, 0.24);
 }
 
 .tab-content {
@@ -770,11 +770,11 @@ body > section#top:first-of-type {
 .btn-primary {
     background: var(--brand-gradient);
     color: #ffffff;
-    box-shadow: 0 18px 34px rgba(37, 77, 212, 0.22);
+    box-shadow: 0 18px 34px rgba(47, 107, 255, 0.22);
 }
 
 .btn-primary:hover {
-    box-shadow: 0 24px 42px rgba(37, 77, 212, 0.28);
+    box-shadow: 0 24px 42px rgba(47, 107, 255, 0.28);
 }
 
 .btn-secondary {
@@ -785,7 +785,7 @@ body > section#top:first-of-type {
 }
 
 .btn-secondary:hover {
-    background: rgba(18, 62, 203, 0.06);
+    background: rgba(47, 107, 255, 0.06);
     border-color: var(--line-strong);
 }
 
@@ -819,8 +819,8 @@ body > section#top:first-of-type {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: rgba(31, 99, 255, 0.35);
-    box-shadow: 0 0 0 4px rgba(31, 99, 255, 0.1);
+    border-color: rgba(47, 107, 255, 0.35);
+    box-shadow: 0 0 0 4px rgba(47, 107, 255, 0.1);
 }
 
 .form-group textarea {
@@ -870,7 +870,7 @@ body > section#top:first-of-type {
 .cookie-banner-title {
     margin-bottom: 8px;
     color: var(--accent);
-    font-family: "DM Sans", sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     font-size: 1.1rem;
     font-weight: 700;
 }
@@ -921,7 +921,7 @@ body > section#top:first-of-type {
 .cookie-button-accept {
     background: var(--brand-gradient);
     color: #ffffff;
-    box-shadow: 0 16px 30px rgba(37, 77, 212, 0.2);
+    box-shadow: 0 16px 30px rgba(47, 107, 255, 0.2);
 }
 
 .cookie-button-decline {
@@ -958,7 +958,7 @@ body > section#top:first-of-type {
     padding: 46px 38px;
     text-align: center;
     background:
-        linear-gradient(145deg, rgba(9, 24, 72, 0.96), rgba(28, 54, 169, 0.92) 56%, rgba(255, 46, 168, 0.86) 100%),
+        linear-gradient(145deg, rgba(9, 24, 72, 0.96), rgba(28, 54, 169, 0.92) 40%, rgba(90, 79, 207, 0.9) 70%, rgba(244, 63, 140, 0.86) 100%),
         radial-gradient(circle at top left, rgba(103, 175, 255, 0.26), transparent 34%);
     color: #eef4ff;
     margin-top: 8px;
@@ -1092,9 +1092,9 @@ footer a {
 }
 
 .detail-chip-accent {
-    background: rgba(255, 46, 168, 0.1);
-    border-color: rgba(255, 46, 168, 0.18);
-    color: #b31c73;
+    background: rgba(244, 63, 140, 0.1);
+    border-color: rgba(244, 63, 140, 0.18);
+    color: #c4206a;
 }
 
 .detail-body > * + * {
@@ -1114,7 +1114,7 @@ footer a {
 .detail-note {
     padding: 18px 20px;
     border-left: 3px solid var(--highlight);
-    background: rgba(255, 46, 168, 0.08);
+    background: rgba(244, 63, 140, 0.08);
     border-radius: 0 16px 16px 0;
 }
 
@@ -1183,7 +1183,7 @@ footer a {
 .fit-card-featured {
     background:
         linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(247, 250, 255, 0.82)),
-        linear-gradient(135deg, rgba(18, 62, 203, 0.12), rgba(255, 46, 168, 0.08));
+        linear-gradient(135deg, rgba(47, 107, 255, 0.12), rgba(244, 63, 140, 0.08));
 }
 
 .home-use-case-grid {
@@ -1201,7 +1201,7 @@ footer a {
     border: 1px solid var(--line);
     border-radius: var(--radius-lg);
     background:
-        linear-gradient(160deg, rgba(12, 23, 52, 0.98), rgba(24, 44, 113, 0.94) 56%, rgba(46, 43, 204, 0.9) 100%);
+        linear-gradient(160deg, rgba(12, 23, 52, 0.98), rgba(24, 44, 113, 0.94) 40%, rgba(90, 79, 207, 0.9) 70%, rgba(124, 58, 237, 0.88) 100%);
     color: #f5f8ff;
     box-shadow: var(--shadow-card);
     padding: clamp(24px, 3vw, 34px);
