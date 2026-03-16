@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quickler Business Card Print</title>
+    <style>
+        :root {
+            --ink-strong: #0c1734;
+            --ink-soft: #5f7097;
+            --line: rgba(24, 52, 132, 0.14);
+            --brand-blue: #1f63ff;
+            --brand-indigo: #2e2bcc;
+            --brand-pink: #ff2ea8;
+            --brand-gradient: linear-gradient(135deg, #1f63ff 0%, #2e2bcc 48%, #ff2ea8 100%);
+            --brand-gradient-soft: linear-gradient(135deg, rgba(31, 99, 255, 0.12) 0%, rgba(46, 43, 204, 0.1) 48%, rgba(255, 46, 168, 0.12) 100%);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            width: 1051px;
+            height: 638px;
+            overflow: hidden;
+            background: transparent;
+            color: var(--ink-strong);
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        .card-shell {
+            width: 1051px;
+            height: 638px;
+            position: relative;
+            overflow: hidden;
+            background:
+                radial-gradient(circle at top left, rgba(31, 99, 255, 0.2), transparent 33%),
+                radial-gradient(circle at top right, rgba(255, 46, 168, 0.16), transparent 26%),
+                linear-gradient(180deg, #fbfdff 0%, #f4f8ff 100%);
+        }
+
+        .card-shell::before {
+            content: "";
+            position: absolute;
+            inset: 18px;
+            border: 1px solid var(--line);
+            pointer-events: none;
+        }
+
+        .card-shell::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(circle at 82% 18%, rgba(255, 46, 168, 0.13), transparent 17%),
+                radial-gradient(circle at 14% 84%, rgba(31, 99, 255, 0.14), transparent 19%);
+            pointer-events: none;
+        }
+
+        .card-grid {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: 1.25fr 0.9fr;
+            gap: 28px;
+            height: 100%;
+            padding: 38px 46px 58px;
+        }
+
+        .left-col,
+        .right-col {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .left-col {
+            justify-content: flex-start;
+        }
+
+        .wordmark {
+            display: inline-flex;
+            align-items: baseline;
+            font-size: 64px;
+            font-weight: 800;
+            line-height: 0.9;
+            letter-spacing: -0.065em;
+        }
+
+        .wordmark-q {
+            margin-right: -4px;
+            background: var(--brand-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .wordmark-quick {
+            color: #1653d6;
+        }
+
+        .wordmark-ler {
+            background: linear-gradient(135deg, var(--brand-indigo) 0%, var(--brand-pink) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .identity {
+            display: grid;
+            gap: 8px;
+            margin-top: 14px;
+        }
+
+        .name {
+            margin: 0;
+            font-size: 54px;
+            line-height: 0.94;
+            letter-spacing: -0.05em;
+        }
+
+        .role {
+            margin: 0;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--brand-indigo);
+        }
+
+        .tagline {
+            max-width: 520px;
+            margin: 128px 0 0;
+            padding: 14px 18px;
+            border: 1px solid rgba(24, 52, 132, 0.1);
+            border-radius: 24px;
+            background: rgba(255, 255, 255, 0.72);
+        }
+
+        .tagline p {
+            margin: 0;
+            font-size: 22px;
+            line-height: 1.1;
+            letter-spacing: -0.035em;
+        }
+
+        .tagline .arrow {
+            background: var(--brand-gradient);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .right-col {
+            justify-content: center;
+        }
+
+        .contact-panel {
+            padding: 20px 22px;
+            border-radius: 28px;
+            border: 1px solid rgba(24, 52, 132, 0.12);
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.86) 0%, rgba(255, 255, 255, 0.74) 100%),
+                var(--brand-gradient-soft);
+        }
+
+        .contact-label {
+            margin: 0 0 10px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: var(--ink-soft);
+        }
+
+        .contact-list {
+            display: grid;
+            gap: 10px;
+        }
+
+        .contact-item {
+            margin: 0;
+            font-size: 19px;
+            line-height: 1.14;
+            letter-spacing: -0.025em;
+        }
+
+        .contact-item strong {
+            display: block;
+            margin-bottom: 2px;
+            font-size: 12px;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--brand-indigo);
+        }
+
+        .contact-item.website {
+            font-weight: 700;
+        }
+
+        .accent-bar {
+            position: absolute;
+            right: 46px;
+            top: 38px;
+            width: 136px;
+            height: 8px;
+            border-radius: 999px;
+            background: var(--brand-gradient);
+        }
+
+        @page {
+            size: 88.9mm 55.88mm;
+            margin: 0;
+        }
+
+        @media print {
+            html,
+            body,
+            .card-shell {
+                width: 88.9mm;
+                height: 55.88mm;
+            }
+        }
+    </style>
+</head>
+<body>
+    <article class="card-shell" aria-label="Quickler business card print">
+        <div class="accent-bar" aria-hidden="true"></div>
+        <div class="card-grid">
+            <section class="left-col">
+                <div>
+                    <div class="wordmark" role="img" aria-label="Quickler">
+                        <span class="wordmark-q">Q</span><span class="wordmark-quick">uick</span><span class="wordmark-ler">ler</span>
+                    </div>
+                    <div class="identity">
+                        <h1 class="name">Philip Ross</h1>
+                        <p class="role">Director</p>
+                    </div>
+                </div>
+                <div class="tagline">
+                    <p>Site notes &amp; photos <span class="arrow">-&gt;</span> finished reports</p>
+                </div>
+            </section>
+
+            <aside class="right-col">
+                <div class="contact-panel">
+                    <p class="contact-label">Contact</p>
+                    <div class="contact-list">
+                        <p class="contact-item">
+                            <strong>Phone</strong>
+                            07946 608293
+                        </p>
+                        <p class="contact-item">
+                            <strong>Email</strong>
+                            philip@quickler.co
+                        </p>
+                        <p class="contact-item website">
+                            <strong>Web</strong>
+                            quickler.co
+                        </p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </article>
+</body>
+</html>

@@ -81,6 +81,13 @@ img {
     display: block;
 }
 
+img.wordmark {
+    display: inline-block;
+    height: 0.88em;
+    width: auto;
+    vertical-align: -0.18em;
+}
+
 a {
     color: inherit;
 }
