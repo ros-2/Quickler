@@ -10,121 +10,111 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Primary Meta Tags -->
-    <title>Quickler Reports | Reporting Software For Field Teams</title>
-    <meta name="title" content="Quickler Reports | Reporting Software For Field Teams">
-    <meta name="description" content="Apply for an early Quickler Reports pilot for inspection, survey, site visit, compliance, and maintenance teams that turn site notes, photos, and voice into finished reports.">
-    <meta name="keywords" content="inspection reporting software, survey reporting software, field reporting software, compliance reporting, maintenance reporting, Scotland">
+    <title>Quickler | Site Reports, Invoices &amp; Purchase Orders, and Custom Workflow Software</title>
+    <meta name="title" content="Quickler | Site Reports, Invoices &amp; Purchase Orders, and Custom Workflow Software">
+    <meta name="description" content="Quickler builds site reporting software, invoice and purchase order workflow systems, and custom internal tools for report-heavy and operations-heavy businesses.">
+    <meta name="keywords" content="site reporting software, purchase order workflow software, invoice automation, custom internal tools, workflow automation, Scotland, UK">
     <meta name="author" content="Philip Ross">
     <meta name="robots" content="index, follow">
 
-    <!-- Open Graph / Social -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://quickler.co/">
-    <meta property="og:title" content="Quickler Reports | Reporting Software For Field Teams">
-    <meta property="og:description" content="Apply for an early Quickler Reports pilot for teams with repeated reporting workflows.">
+    <meta property="og:title" content="Quickler | Site Reports, Invoices &amp; Purchase Orders, and Custom Workflow Software">
+    <meta property="og:description" content="Choose the Quickler lane that fits your workflow: site reports, invoices and purchase orders, or custom internal systems.">
     <meta property="og:locale" content="en_GB">
 
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Quickler Reports | Reporting Software For Field Teams">
-    <meta name="twitter:description" content="Apply for an early pilot and turn site notes, photos, and voice into finished reports faster.">
+    <meta name="twitter:title" content="Quickler | Site Reports, Invoices &amp; Purchase Orders, and Custom Workflow Software">
+    <meta name="twitter:description" content="Quickler builds practical workflow software for report-heavy and operations-heavy teams.">
 
-    <!-- Canonical URL -->
     <link rel="canonical" href="https://quickler.co/">
-
-    <!-- Hreflang -->
     <link rel="alternate" hreflang="en-gb" href="https://quickler.co/">
     <link rel="alternate" hreflang="x-default" href="https://quickler.co/">
-
-    <!-- Cache control suggestions (actual caching is handled server-side) -->
     <meta http-equiv="Cache-Control" content="public, max-age=31536000, immutable">
-    
-    <!-- Schema.org structured data for LLMs and search engines -->
+    <meta name="quickler:agent-entry" content="homepage-lane-router">
+    <meta name="quickler:preferred-contact-page" content="https://quickler.co/pages/contact.html">
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "Quickler Reports",
-        "description": "Chat-first reporting product for inspection, survey, site visit, compliance, and maintenance teams. Capture site notes, photos, and voice on site — Quickler structures them into a near-finished report.",
-        "url": "https://quickler.co/",
-        "applicationCategory": "BusinessApplication",
-        "operatingSystem": "Web",
-        "offers": {
-            "@type": "Offer",
-            "availability": "https://schema.org/PreOrder",
-            "description": "Early pilot access for inspection, survey, site visit, compliance, and maintenance teams with repeated reporting workflows."
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Quickler Ltd",
-            "url": "https://quickler.co/",
-            "areaServed": {
-                "@type": "Country",
-                "name": "United Kingdom"
-            },
-            "founder": {
-                "@type": "Person",
-                "name": "Philip Ross",
-                "jobTitle": "Founder",
-                "description": "BEng Electrical and Mechanical Engineering, University of Strathclyde. Previously at Dijuno (AI analytics). Specialises in LLM integration, Python automation, and technical reporting workflows.",
-                "knowsAbout": ["chat-first reporting", "technical report automation", "LLM integration", "process automation", "Python", "Google Apps Script"],
-                "alumniOf": {
-                    "@type": "CollegeOrUniversity",
-                    "name": "University of Strathclyde"
+        "@graph": [
+            {
+                "@type": "Organization",
+                "name": "Quickler Ltd",
+                "url": "https://quickler.co/",
+                "identifier": "SC882439",
+                "sameAs": [
+                    "https://find-and-update.company-information.service.gov.uk/company/SC882439",
+                    "https://www.linkedin.com/company/quickler/"
+                ],
+                "founder": {
+                    "@type": "Person",
+                    "name": "Philip Ross"
+                },
+                "areaServed": {
+                    "@type": "Country",
+                    "name": "United Kingdom"
                 }
+            },
+            {
+                "@type": "WebSite",
+                "name": "Quickler",
+                "url": "https://quickler.co/",
+                "description": "Quickler builds site reporting software, invoice and purchase order workflow systems, and custom internal tools for operations-heavy businesses."
+            },
+            {
+                "@type": "ItemList",
+                "name": "Quickler product lanes",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "url": "https://quickler.co/pages/invoices-po.html",
+                        "name": "Quickler Invoices & Purchase Orders"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "url": "https://quickler.co/pages/services.html",
+                        "name": "Quickler Site Reports"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "url": "https://quickler.co/pages/custom.html",
+                        "name": "Quickler Custom"
+                    }
+                ]
             }
-        }
+        ]
     }
     </script>
 
-    <!-- FAQ Schema for SEO and LLM comprehension -->
-    <script type="application/ld+json">
+    <script type="application/json" id="agent-site-map">
     {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
+        "page_type": "homepage_router",
+        "preferred_next_action": "choose_lane",
+        "lanes": [
             {
-                "@type": "Question",
-                "name": "What is Quickler Reports?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Quickler Reports is a chat-first reporting product being built for inspection, survey, site visit, compliance, and maintenance teams. It lets staff capture site notes, photos, and voice in the field, then structures that input into a near-finished report — removing the need to rewrite information twice."
-                }
+                "id": "invoices-po",
+                "label": "Quickler Invoices & Purchase Orders",
+                "url": "/pages/invoices-po.html",
+                "best_for": ["purchase orders", "invoice workflows", "approvals", "pdf outputs", "document indexing"]
             },
             {
-                "@type": "Question",
-                "name": "Who is Quickler for?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Quickler is for teams who write the same types of reports repeatedly in inspections, surveys, site visits, compliance work, and maintenance. If your team captures notes on site and rebuilds a formal report from them later, Quickler is designed to close that gap."
-                }
+                "id": "site-reports",
+                "label": "Quickler Site Reports",
+                "url": "/pages/services.html",
+                "best_for": ["inspection reports", "survey reports", "maintenance reports", "site visits", "compliance reports"]
             },
             {
-                "@type": "Question",
-                "name": "Where is Quickler based?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Quickler Ltd is based in Edinburgh, Scotland and builds for UK technical teams."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What work has Quickler delivered so far?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Before focusing the business on Quickler Reports, the company solved repeated admin and reporting problems for charities, publishers, and commercial teams. Across six completed projects, clients saved 51.5 working days per year, with a 12x average return on time invested."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Who founded Quickler?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Philip Ross, an engineering graduate from the University of Strathclyde. He previously worked at Dijuno, an AI analytics startup serving Coca-Cola and other major FMCG brands, where he built expertise in LLM testing, prompt engineering, and Python automation."
-                }
+                "id": "custom",
+                "label": "Quickler Custom",
+                "url": "/pages/custom.html",
+                "best_for": ["internal tools", "workflow automation", "dashboards", "data cleanup", "bespoke systems"]
             }
-        ]
+        ],
+        "contact_url": "/pages/contact.html"
     }
     </script>
 
@@ -135,7 +125,8 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <nav>
+    <a href="#main-content" class="visually-hidden">Skip to main content</a>
+    <nav aria-label="Primary" data-agent-role="primary-navigation">
         <a href="/" class="nav-name">
             <img src="/assets/logos/quickler-logo.svg" alt="Quickler">
         </a>
@@ -144,321 +135,170 @@
             <span class="hamburger-line"></span>
             <span class="hamburger-line"></span>
         </button>
-        <div class="nav-menu">
-            <a href="/">Home</a>
-            <a href="/pages/services.html">Product</a>
-            <a href="/pages/projects.html">Case Studies</a>
-            <a href="/pages/about.html">About</a>
-            <a href="/pages/contact.html">Apply</a>
+        <div class="nav-menu" data-agent-role="lane-navigation">
+            <a href="/" data-agent-target="home">Home</a>
+            <a href="/pages/services.html" data-agent-target="site-reports">Site Reports</a>
+            <a href="/pages/invoices-po.html" data-agent-target="invoices-po">Invoices &amp; POs</a>
+            <a href="/pages/custom.html" data-agent-target="custom">Custom</a>
+            <a href="/pages/projects.html" data-agent-target="case-studies">Case Studies</a>
+            <a href="/pages/contact.html" data-agent-target="contact">Contact</a>
         </div>
     </nav>
 
-    <main>
-    <section class="hero" id="top">
-        <div class="hero-content">
-            <span class="hero-label">Quickler Reports</span>
-            <h1>Turn site notes, photos, and voice into finished reports faster.</h1>
-            <p class="hero-text">For inspection, survey, site visit, compliance, and maintenance teams. Capture on site, finish the report at your desk — Quickler closes the gap between the two.</p>
-            <p class="hero-credentials">Based in Scotland · Building for UK teams with repeated reporting work in inspections, surveys, compliance, site visits, and maintenance</p>
-            <div class="membership-strip" aria-label="Professional memberships">
-                <span class="membership-label">Member of</span>
-                <div class="membership-badges">
-                    <a class="membership-badge membership-badge-dacc" href="https://www.dundeeandanguschamber.co.uk/" target="_blank" rel="noopener">
-                        <img src="/assets/logos/dacc-logo.svg" alt="Dundee & Angus Chamber of Commerce">
-                        <span>Dundee &amp; Angus Chamber</span>
-                    </a>
-                    <a class="membership-badge membership-badge-fsb" href="https://www.fsb.org.uk/" target="_blank" rel="noopener">
-                        <img src="/assets/logos/fsb-member-mark.png" alt="FSB">
-                        <span>FSB</span>
-                    </a>
+    <main id="main-content" data-agent-page="homepage-router">
+        <section class="hero hero-fork" id="top" aria-labelledby="homepage-title">
+            <div class="hero-content hero-content-wide">
+                <span class="hero-label">Quickler</span>
+                <h1 id="homepage-title">Choose the Quickler workflow that fits what you need.</h1>
+                <p class="hero-text">Quickler is not one vague AI offer. It has three clear lanes: site reports for field teams, invoice and purchase order workflows for operational control, and custom internal systems for everything else with repeated admin drag.</p>
+                <p class="hero-credentials">Quickler Ltd · Scotland-based · Built for UK teams that want practical workflow software rather than fluff</p>
+                <div class="hero-actions">
+                    <a href="#choose-quickler" class="btn btn-primary">Choose your lane</a>
+                    <a href="/pages/projects.html" class="btn btn-secondary">See delivered work</a>
                 </div>
             </div>
+        </section>
 
-            <div class="hero-actions">
-                <a href="/pages/contact.html" class="btn btn-primary" data-cta="home-hero-apply-pilot">Apply for an early pilot</a>
-                <a href="#pilot-fit" class="btn btn-secondary">See pilot fit</a>
+        <section class="section-tight fork-section" id="choose-quickler" aria-labelledby="lane-router-title">
+            <div class="section-header">
+                <div>
+                    <p class="section-label">Three Clear Routes</p>
+                    <h2 id="lane-router-title">Start with the job you need done</h2>
+                </div>
             </div>
-
-            <ul class="hero-points">
-                <li>Built for repeated field reporting, not generic AI writing.</li>
-                <li>Starts with one report type that already matters to the business.</li>
-                <li>Human review stays in control before final send.</li>
-            </ul>
-        </div>
-
-        <div class="impact-box">
-            <p class="impact-label">Pilot focus</p>
-            <h2 class="impact-title">Start with one reporting workflow that already matters.</h2>
-            <p class="impact-explain">A good pilot starts with one repeated report type, real examples from live work, and one clear success target: less admin and less desk rewrite time.</p>
-        </div>
-    </section>
-
-    <section class="section-tight home-fit-section">
-        <div class="section-header">
-            <div>
-                <p class="section-label">Quick Fit Check</p>
-                <h2>Who this is for (and not for)</h2>
-            </div>
-        </div>
-        <div class="home-fit-grid">
-            <div class="fit-card fit-card-featured">
-                <h3>Best fit</h3>
-                <ul>
-                    <li>Inspection, survey, site visit, compliance, and maintenance teams with repeated reports.</li>
-                    <li>Businesses where notes are captured on site and rewritten later at a desk.</li>
-                    <li>Leaders who want faster reporting without forcing staff into clumsy apps or generic AI tools.</li>
-                </ul>
-            </div>
-            <div class="fit-card">
-                <h3>Good reason to act now</h3>
-                <ul>
-                    <li>Reporting is important to delivery, compliance, or handover quality.</li>
-                    <li>Teams already capture photos, notes, voice, or forms during the job.</li>
-                    <li>One repeated report type would be enough to justify a pilot.</li>
-                </ul>
-            </div>
-            <div class="fit-card">
-                <h3>Not ideal</h3>
-                <ul>
-                    <li>Teams looking for a broad enterprise platform from day one.</li>
-                    <li>Workflows with no repeated report structure at all.</li>
-                    <li>Use cases where trust, review, and evidence do not matter.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-tight home-pilot-fit-section" id="pilot-fit">
-        <div class="section-header">
-            <div>
-                <p class="section-label">Early Pilot</p>
-                <h2>Best first pilots</h2>
-            </div>
-        </div>
-        <div class="home-pilot-fit-grid">
-            <div class="fit-card fit-card-featured">
-                <h3>Strong pilot fit</h3>
-                <ul>
-                    <li>Your team writes similar inspection, survey, site visit, compliance, or maintenance reports every week or month.</li>
-                    <li>Notes, photos, voice, or forms are captured during the job.</li>
-                    <li>The final report is still rebuilt later at a desk.</li>
-                </ul>
-            </div>
-            <div class="fit-card">
-                <h3>Good first workflow</h3>
-                <p>Inspection reports, survey summaries, maintenance visit reports, compliance records, and other repeated documents with a stable structure.</p>
-            </div>
-            <div class="fit-card">
-                <h3>What early teams get</h3>
-                <p>Direct support, a workflow shaped around real examples, and a faster route from field capture to finished report without forcing a full platform rollout.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="home-use-cases" id="benefits">
-        <div class="section-header">
-            <div>
-                <p class="section-label">Who It Helps</p>
-                <h2>Teams that still write the same report twice</h2>
-            </div>
-        </div>
-
-        <div class="home-use-case-grid">
-            <div class="benefit-card">
-                <h3>Survey and inspection teams</h3>
-                <p>You capture observations on site, then lose time rebuilding them into a formal report afterwards.</p>
-            </div>
-            <div class="benefit-card">
-                <h3>Site visits and maintenance teams</h3>
-                <p>You need consistent outputs, fewer missed details, and less copy-paste between the visit itself and the final document.</p>
-            </div>
-            <div class="benefit-card">
-                <h3>Compliance-heavy work</h3>
-                <p>You need clearer evidence trails, structured outputs, and less risk of details getting lost between capture and sign-off.</p>
-            </div>
-            <div class="benefit-card">
-                <h3>Operational teams that need trust</h3>
-                <p>You want reporting to get faster without losing review, evidence, structure, or accountability.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="home-workflow">
-        <div class="section-header">
-            <div>
-                <p class="section-label">How It Works</p>
-                <h2>A reporting workflow, not a generic AI box</h2>
-            </div>
-        </div>
-
-        <div class="home-workflow-shell">
-            <div class="home-workflow-intro">
-                <h3>Quickler is being built to handle one repeated reporting loop properly.</h3>
-                <p>That means capturing what happened on site, turning it into a structured draft, and keeping review in control before anything is sent. The point is not to replace judgment. It is to remove the waste between capture and finished report.</p>
-            </div>
-            <div class="home-workflow-grid">
-                <div class="benefit-card">
-                    <h3>Capture on site</h3>
+            <div class="fork-grid" role="list" data-agent-role="lane-router">
+                <a class="fork-card fork-card-left" href="/pages/invoices-po.html" role="listitem" data-agent-lane="invoices-po" data-agent-intent="purchase orders, invoice workflows, approvals">
+                    <span class="fork-card-kicker">Left</span>
+                    <h3>Quickler Invoices &amp; Purchase Orders</h3>
+                    <p>Invoice workflow, purchase order approval, PDF generation, document indexing, and repeatable admin control for growing businesses.</p>
                     <ul>
-                        <li>Voice, photos, and text in a familiar chat workflow.</li>
-                        <li>No heavy app adoption burden on engineers or technicians.</li>
-                        <li>Natural capture during a live inspection, survey, or visit.</li>
+                        <li>Built around the PO and invoice system already delivered</li>
+                        <li>Demo and proof for operations-heavy teams</li>
+                        <li>Best for finance and ops process bottlenecks</li>
                     </ul>
-                </div>
-                <div class="benefit-card">
-                    <h3>Draft in structure</h3>
-                    <ul>
-                        <li>Turns raw capture into a near-finished report shape.</li>
-                        <li>Fits repeated technical report structures.</li>
-                        <li>Reduces copy-paste and rewrite time.</li>
-                    </ul>
-                </div>
-                <div class="benefit-card">
-                    <h3>Review before send</h3>
-                    <ul>
-                        <li>Human review stays in the loop before final send.</li>
-                        <li>Corrections can be made in plain language.</li>
-                        <li>Trust, evidence, and sign-off stay intact.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <span class="fork-card-cta">Enter invoices &amp; POs</span>
+                </a>
 
-    <section class="home-pilot-path">
-        <div class="section-header">
-            <div>
-                <p class="section-label">Pilot Path</p>
-                <h2>How a pilot starts</h2>
-            </div>
-        </div>
+                <a class="fork-card fork-card-featured" href="/pages/services.html" role="listitem" data-agent-lane="site-reports" data-agent-intent="inspection reports, survey reports, site visits, maintenance, compliance">
+                    <span class="fork-card-kicker">Centre</span>
+                    <h3>Quickler Site Reports</h3>
+                    <p>Early-pilot reporting software for inspection, survey, site visit, compliance, and maintenance teams that still rewrite reports later at a desk.</p>
+                    <ul>
+                        <li>Designed for pilot applications and real workflow sign-up</li>
+                        <li>Capture notes, photos, and voice, then draft into report structure</li>
+                        <li>Best for report-heavy field operations</li>
+                    </ul>
+                    <span class="fork-card-cta">Enter site reports</span>
+                </a>
 
-        <div class="home-pilot-layout">
-            <div class="home-pilot-steps">
-                <div class="benefit-card">
-                    <h3>1. Show the current workflow</h3>
-                    <p>Show how your team currently captures, writes, reviews, and sends reports.</p>
-                </div>
-                <div class="benefit-card">
-                    <h3>2. Validate the report shape</h3>
-                    <p>Work from real examples so the output structure matches what your team actually needs.</p>
-                </div>
-                <div class="benefit-card">
-                    <h3>3. Test the capture-to-draft loop</h3>
-                    <p>Focus first on getting one reporting workflow working reliably end to end.</p>
-                </div>
-                <div class="benefit-card">
-                    <h3>4. Expand only once it proves itself</h3>
-                    <p>Widen to more report types, routing steps, or integrations only after the core loop works.</p>
+                <a class="fork-card fork-card-right" href="/pages/custom.html" role="listitem" data-agent-lane="custom" data-agent-intent="internal tools, dashboards, automation, bespoke systems">
+                    <span class="fork-card-kicker">Right</span>
+                    <h3>Quickler Custom</h3>
+                    <p>Custom workflow software, internal tools, dashboards, structured data cleanup, and business systems for teams with repeated admin friction outside the standard lanes.</p>
+                    <ul>
+                        <li>For bespoke builds and awkward internal workflows</li>
+                        <li>Draws on delivered work across charities, publishing, and SME operations</li>
+                        <li>Best for businesses saying “we need this fixed”</li>
+                    </ul>
+                    <span class="fork-card-cta">Enter custom</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="section-tight">
+            <div class="section-header">
+                <div>
+                    <p class="section-label">What Quickler Does</p>
+                    <h2>Workflow software for businesses that are still doing the same admin twice</h2>
                 </div>
             </div>
-            <aside class="home-pilot-aside">
+            <div class="card-link-grid">
+                <article class="card-link">
+                    <span class="card-link-kicker">Site reports</span>
+                    <h3 class="card-link-title">Report-heavy field operations</h3>
+                    <p class="card-link-copy">Inspection, survey, site visit, compliance, and maintenance teams that collect rough inputs on site and then rebuild the final report later.</p>
+                </article>
+                <article class="card-link">
+                    <span class="card-link-kicker">Invoices and POs</span>
+                    <h3 class="card-link-title">Operational control and approvals</h3>
+                    <p class="card-link-copy">Businesses that need repeatable purchase order approval, invoice-ready outputs, auditability, and fewer bottlenecks around financial admin.</p>
+                </article>
+                <article class="card-link">
+                    <span class="card-link-kicker">Custom systems</span>
+                    <h3 class="card-link-title">Bespoke internal tooling</h3>
+                    <p class="card-link-copy">Teams with messy spreadsheets, repeated data handling, awkward internal processes, or reporting and workflow problems that do not fit a single off-the-shelf app.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-proof home-proof-section">
+            <div class="proof-header">
+                <h2>Built from delivered work, not startup theatre</h2>
+                <p>Quickler’s current lanes come from real workflow pain already solved in live organisations.</p>
+            </div>
+
+            <div class="home-proof-grid">
                 <div class="proof-card">
-                    <strong>What to bring</strong>
-                    <p>The best application includes one repeated report type, a rough idea of volume, and what gets captured during the job before the desk rewrite begins.</p>
-                    <a href="/pages/contact.html" class="btn btn-primary" data-cta="home-pilot-sidebar-apply">Apply for an early pilot</a>
+                    <strong>6 delivered systems</strong>
+                    <p>Completed workflow systems across charities, publishing, and commercial operations before narrowing into clearer product lanes.</p>
                 </div>
-            </aside>
-        </div>
-    </section>
-
-    <section class="section-proof home-proof-section">
-        <div class="proof-header">
-            <h2>What early teams can expect</h2>
-            <p>Quickler is aimed at early teams who want one repeated reporting workflow handled better before anything broader is attempted.</p>
-        </div>
-
-        <div class="home-proof-grid">
-            <div class="proof-card">
-                <strong>Proven admin pain</strong>
-                <p>Earlier systems proved there is real admin and reporting friction worth removing.</p>
+                <div class="proof-card">
+                    <strong>51.5 working days saved</strong>
+                    <p>Measured annual time savings already delivered across earlier systems.</p>
+                </div>
+                <div class="proof-card">
+                    <strong>12x average return</strong>
+                    <p>Average annual return on time invested across the delivered workflow portfolio.</p>
+                </div>
+                <div class="proof-card">
+                    <strong>Founder-led scoping</strong>
+                    <p>Each lane is framed around a practical workflow, not around selling generic AI for its own sake.</p>
+                </div>
             </div>
-            <div class="proof-card">
-                <strong>Scoped pilot</strong>
-                <p>Early pilots start with one repeated report type, not a broad enterprise rollout.</p>
+        </section>
+
+        <section class="section-tight">
+            <div class="section-header">
+                <div>
+                    <p class="section-label">LLM And Search Context</p>
+                    <h2>Plain-language terms people use to find Quickler</h2>
+                </div>
             </div>
-            <div class="proof-card">
-                <strong>Human review</strong>
-                <p>Founder-led and review-led at the start, so the workflow is understood properly before automation expands.</p>
+            <div class="card-link-grid">
+                <article class="card-link">
+                    <span class="card-link-kicker">Search intent</span>
+                    <h3 class="card-link-title">Site reporting software</h3>
+                    <p class="card-link-copy">Useful for searches such as site reporting software, inspection reporting software, survey report automation, maintenance report automation, and compliance reporting workflow.</p>
+                </article>
+                <article class="card-link">
+                    <span class="card-link-kicker">Search intent</span>
+                    <h3 class="card-link-title">Purchase order and invoice workflow software</h3>
+                    <p class="card-link-copy">Useful for searches such as purchase order approval software, invoice workflow system, PO automation for SMEs, and custom purchase order platform.</p>
+                </article>
+                <article class="card-link">
+                    <span class="card-link-kicker">Search intent</span>
+                    <h3 class="card-link-title">Custom workflow software for SMEs</h3>
+                    <p class="card-link-copy">Useful for searches such as custom internal tool developer, workflow automation consultant, AI workflow software for operations teams, and bespoke business systems in Scotland.</p>
+                </article>
             </div>
-            <div class="proof-card">
-                <strong>Real next step</strong>
-                <p>The next useful step is not browsing. It is applying with one repeated report workflow.</p>
-            </div>
+        </section>
+
+        <div class="cta-banner">
+            <h3>Choose the lane that matches the workflow you want fixed.</h3>
+            <p>If you already know the problem, go straight into the relevant Quickler section and start there.</p>
+            <a href="#choose-quickler" class="btn btn-primary">Choose Quickler</a>
         </div>
-    </section>
-
-    <section class="section-tight">
-        <div class="section-header">
-            <div>
-                <p class="section-label">Why Trust It</p>
-                <h2>Built by someone who has already shipped workflow fixes</h2>
-            </div>
-        </div>
-
-        <div class="card-link-grid">
-            <article class="card-link">
-                <span class="card-link-kicker">Founder</span>
-                <h3 class="card-link-title">Engineering and workflow background</h3>
-                <p class="card-link-copy">Philip Ross studied Electrical and Mechanical Engineering at the University of Strathclyde, then worked in AI analytics and workflow automation. Quickler exists because repeated reporting pain kept showing up in real operational work.</p>
-            </article>
-            <article class="card-link">
-                <span class="card-link-kicker">Delivered work</span>
-                <h3 class="card-link-title">Six workflow projects already shipped</h3>
-                <p class="card-link-copy">Before focusing the business on Quickler Reports, earlier systems removed repeated admin and reporting drag across charities, publishers, and commercial teams. Across six projects, the delivered work saved 51.5 working days per year.</p>
-            </article>
-            <article class="card-link">
-                <span class="card-link-kicker">Current stage</span>
-                <h3 class="card-link-title">Early pilot, not a fake finished platform</h3>
-                <p class="card-link-copy">Quickler is at the stage where the first workflow is being shaped properly with early teams. The offer now is not a giant platform rollout. It is a focused pilot around one repeated report that already matters.</p>
-            </article>
-        </div>
-    </section>
-
-    <section class="section-tight">
-        <div class="section-header">
-            <div>
-                <p class="section-label">After You Apply</p>
-                <h2>What happens after a pilot application</h2>
-            </div>
-        </div>
-
-        <div class="card-link-grid">
-            <article class="card-link">
-                <span class="card-link-kicker">Step 1</span>
-                <h3 class="card-link-title">Quickler reviews fit</h3>
-                <p class="card-link-copy">The application is checked against one repeated report type, likely reporting volume, and whether the workflow really has desk rewrite pain.</p>
-            </article>
-            <article class="card-link">
-                <span class="card-link-kicker">Step 2</span>
-                <h3 class="card-link-title">Short scoping conversation</h3>
-                <p class="card-link-copy">If the fit looks strong, the next step is a short conversation around the current report, inputs, review process, and what success would look like in a pilot.</p>
-            </article>
-            <article class="card-link">
-                <span class="card-link-kicker">Step 3</span>
-                <h3 class="card-link-title">One workflow first</h3>
-                <p class="card-link-copy">The pilot starts with one repeated reporting workflow, not a broad transformation programme. That keeps the scope honest and makes the result easier to prove.</p>
-            </article>
-        </div>
-    </section>
-
-    <div class="cta-banner">
-        <h3>If your team still rewrites reports after the site visit, apply now.</h3>
-        <p>Tell Quickler what one repeated report looks like today, how often it happens, and what gets captured during the job.</p>
-        <a href="/pages/contact.html" class="btn btn-primary" data-cta="home-bottom-apply-pilot">Apply for an early pilot</a>
-    </div>
-
     </main>
 
     <footer>
-        <p>Quickler Ltd · <a href="mailto:hello@quickler.co">hello@quickler.co</a> · <a href="/pages/legal.html">Legal</a> · <a href="/pages/privacy.html">Privacy</a> · <a href="/pages/terms.html">Terms</a> · <a href="/pages/cookies.html">Cookies</a> · <a href="#" data-cookie-settings>Cookie settings</a> · <a href="#top">Back to top ↑</a></p>
+        <p>Quickler Ltd · <a href="https://find-and-update.company-information.service.gov.uk/company/SC882439" target="_blank" rel="noopener noreferrer">Company No. SC882439</a> · <a href="mailto:hello@quickler.co">hello@quickler.co</a> · <a href="/pages/legal.html">Legal</a> · <a href="/pages/privacy.html">Privacy</a> · <a href="/pages/terms.html">Terms</a> · <a href="/pages/cookies.html">Cookies</a> · <a href="#" data-cookie-settings>Cookie settings</a> · <a href="#top">Back to top ↑</a></p>
         <div class="footer-social">
             <a class="footer-social-link" href="https://www.linkedin.com/company/quickler/" target="_blank" rel="noopener noreferrer">
                 <img src="/assets/icons/linkedin.svg" alt="">
                 <span>Quickler on LinkedIn</span>
             </a>
         </div>
-        <p class="footer-note">Working days based on 7.5-hour calculation (37.5-hour working week)</p>
+        <p class="footer-note">Working days based on a 7.5-hour calculation (37.5-hour working week)</p>
     </footer>
     <script src="/js/analytics-events.js"></script>
 </body>

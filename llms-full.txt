@@ -1,193 +1,201 @@
-# Quickler Reports — Full Content
+# Quickler — Full Content
 
-> This file contains the complete text content of the Quickler website for LLM and AI agent consumption.
-> For a brief summary see: https://quickler.co/llms.txt
+> This file contains the core public Quickler content for LLMs, AI agents, and search systems.
+> For a shorter summary see: https://quickler.co/llms.txt
 > For structured data see: https://quickler.co/site.json
 
 ---
 
-## Product Overview
+## Quickler Overview
 
-Quickler Reports is a chat-first reporting product being built for inspection, survey, site visit, compliance, and maintenance teams. It removes double-handling from report writing.
+Quickler builds workflow software for report-heavy and operations-heavy businesses. The public site is organised into three lanes so visitors and AI systems can quickly route to the right offer instead of treating Quickler as one vague agency or generic AI brand.
 
-The core problem: engineers capture information on site in rough form, then return to a desk and rewrite it into a formal report. Quickler closes that gap.
+The three public lanes are:
 
-**How it works:**
-- On-site capture through familiar chat input (text, photos, voice) — no heavy app adoption burden
-- Structured report drafting underneath — turns field capture into a near-finished document
-- Human review stays in the loop before final send — the engineer controls the output
-- Routing and workflow layer — reports go to the right destination after approval
+1. **Quickler Site Reports**
+2. **Quickler Invoices & Purchase Orders**
+3. **Quickler Custom**
 
-**Who it is for:**
-- Survey and inspection teams who capture observations on site and rebuild them into a formal report afterwards
-- Site visit and maintenance teams who need consistent outputs and fewer missed details
-- Compliance-heavy work needing clear evidence trails and structured outputs
-- Leaders who want faster reporting without turning it into an untrusted black box
-
-**Who it is not for:**
-- Teams looking for a broad enterprise platform from day one
-- Workflows with no repeated report structure at all
-- Use cases where trust, review, and evidence do not matter
-
-**Current stage:** Early pilot validation. Working with real technical teams to validate the first reporting niche and prove the capture-to-draft loop before full productisation. The focus is now the reporting product itself: validating the first niche and tightening the capture-to-report loop.
-
-**Pilot sign-up:** Quickler is looking for a small number of initial teams in inspections, surveys, site visits, compliance, and maintenance. The best fit is a team that captures notes, photos, voice, or forms during the job and still rewrites the final report later at a desk. Early teams get direct founder support and help shape the first strong product workflow. Apply at https://quickler.co/pages/contact.html
-
-**Demo:** https://demo.lochross.com/
+This structure exists because the underlying buyer intent is different in each case:
+- some visitors want reporting software for field work
+- some want purchase order or invoice workflow control
+- some want custom internal tools and process automation
 
 ---
 
-## Proof and Outcomes
+## Lane 1: Quickler Site Reports
 
-Quickler is product-led now, but grounded in real delivered workflow work rather than startup theatre.
+Quickler Site Reports is early-pilot reporting software for inspection, survey, site visit, compliance, and maintenance teams.
 
-- **12×** — Annual return per hour invested across all delivered workflow systems
-- **51.5** — Working days saved per year across all delivered projects
-- **6** — Completed workflow systems delivered before moving to product direction
-- **33 hours** — Total build time across all delivered projects
-- Working days calculated on a 7.5-hour basis (37.5-hour working week)
+The core problem:
+- staff capture notes, photos, voice notes, measurements, or forms during the job
+- then return to a desk and rewrite that rough capture into a formal report
 
----
+Quickler Site Reports aims to:
+- capture site information in a natural workflow
+- map it into a stable report structure
+- keep human review in control
+- reduce desk rewrite time without reducing trust
 
-## Case Studies
+Best fit:
+- inspection teams
+- survey teams
+- site visit teams
+- compliance teams
+- maintenance teams
+- any report-heavy field operation with repeated report structures
 
-### 1. Fundraising Automation
-**Client type:** Multi-million pound charitable enterprise
-**Delivered:** November 2025
-**Build time:** 2 hours
-**Time saved:** 6.5 working days per year
+Good pilot signals:
+- one repeated report type already matters to the business
+- there is enough reporting volume to justify fixing the workflow
+- the business can share real examples
+- review and sign-off matter
 
-Grant applications took a full day each because staff were repeatedly finding funders and re-entering the same charity information into similar forms. Quickler built a system that stored the charity's core information and created draft forms automatically. Staff could enter project needs, get matching funders, and start from pre-filled applications instead of blank pages. Eight hours dropped to roughly ten minutes. Across six forms per year, that translated into 6.5 working days returned to higher-value charitable work.
+Primary URL: https://quickler.co/pages/services.html
+Pilot application URL: https://quickler.co/pages/contact.html
 
-**URL:** https://quickler.co/pages/project-fundraising-charity.html
-
----
-
-### 2. Production Tracking Streamlining
-**Client type:** Publishing house
-**Delivered:** November 2025
-**Build time:** 4 hours
-**Time saved:** 14 working days per year
-
-Book status information was scattered across five spreadsheets. Checking whether a book would meet its deadline meant searching multiple files and chasing several people for updates. Quickler built one tracker showing each book's stage, owner, and deadline, with clear visual signals for items at risk. Two hours per week of status chasing disappeared. The result was not just speed, but much clearer publishing operations.
-
-**URL:** https://quickler.co/pages/project-production-tracking.html
-
----
-
-### 3. Fundraising Automation — Small Charity
-**Client type:** Small local charity
-**Delivered:** December 2025
-**Build time:** 0 hours (process and tooling guidance)
-**Time saved:** 5.5 working days per year
-
-A busy charity worker was losing roughly a week per year to repeat fundraising administration that added no real value to the work itself. Introducing better tools and process support freed up 5.5 working days annually, giving that time back to the organisation's core charitable work.
-
-**URL:** https://quickler.co/pages/project-fundraising-small-charity.html
+Likely matching search or LLM requests:
+- site reporting software
+- inspection reporting software
+- survey report automation
+- maintenance report software
+- compliance reporting workflow
+- software to turn site notes into reports
+- reporting software for field teams
 
 ---
 
-### 4. Sales Data Restructuring
-**Client type:** Multi-million pound charitable enterprise
-**Delivered:** December 2025
-**Build time:** 20 hours
-**Time saved:** 14 working days per year
+## Lane 2: Quickler Invoices & Purchase Orders
 
-Sales data was trapped in 43,000 formulas across multiple spreadsheets, to the point that most staff stopped using the reporting because it was too hard to interpret reliably. Quickler rebuilt the underlying data structure and moved calculations into Looker Studio so non-technical staff could filter and understand performance quickly. The result was roughly two hours saved every week and a reporting setup people could actually use instead of avoid.
+Quickler Invoices & Purchase Orders is the Quickler lane for purchase order approval, invoice workflow, PDF generation, document indexing, and operational control software.
 
-**URL:** https://quickler.co/pages/project-sales-data.html
+The core problem:
+- purchase orders and related documents are handled through loose forms, email chains, and scattered files
+- approvals are slow or unclear
+- repeat orders create admin friction
+- the business wants a cleaner audit trail and faster process
 
----
+Typical features:
+- guided purchase order entry
+- saved suppliers, addresses, and line items
+- approval routing
+- status tracking
+- branded PDF generation
+- searchable document indexing
+- repeat-order memory
 
-### 5. Till Data Automation
-**Client type:** Multi-million pound charitable enterprise
-**Delivered:** December 2025
-**Build time:** 7 hours
-**Time saved:** 11.5 working days per year
+This lane is grounded in a real delivered purchase order platform built for a quantum computing startup.
 
-Two staff members were spending time every week pulling till data, reformatting it, and loading it into the main tracking spreadsheet by hand. Quickler added automation in Google Sheets to process the raw exports and feed the main spreadsheet automatically. Northern Ireland became fully automatic and the Scotland workflow dropped to around twenty minutes weekly. The result was 100 minutes saved per week, or around 11.5 working days recovered each year.
+Primary URL: https://quickler.co/pages/invoices-po.html
+Case study URL: https://quickler.co/pages/project-po-workflow-platform.html
+Demo URL: https://demo.lochross.com/
 
-**URL:** https://quickler.co/pages/project-till-data.html
-
----
-
-### 6. PO Workflow Platform
-**Client type:** Quantum computing startup
-**Delivered:** February 2026
-**Build time:** 36 hours
-**Outcome:** End-to-end PO workflow
-
-Quickler built a purchase order platform with guided form entry, saved vendors and addresses, and line-item memory for faster repeat orders. Approval routing by email, approver signature handling, branded PDF generation, and status tracking were added so the workflow could move from pending to approved or denied without disappearing into inboxes. Paperless indexing links, history cloning, and setup automation were also integrated so new environments could start quickly with minimal manual steps.
-
-**URL:** https://quickler.co/pages/project-po-workflow-platform.html
-
----
-
-## Product Direction Detail
-
-**Four product pillars:**
-
-1. **Chat-first capture** — Voice, photos, and text in a familiar chat workflow. No heavy app adoption burden on engineers. Natural capture during a live site visit.
-
-2. **Structured report drafting** — Turns site capture into a near-finished report. Fits repeated technical report structures. Reduces copy-paste and rewrite time.
-
-3. **Human review before send** — Engineer stays in control of the final output. Corrections can be made in plain language. Trust layer stays intact.
-
-4. **Routing and workflow underneath** — Reports go to the right destination after approval. Project context and naming can be handled automatically. Workflow becomes the defensible layer, not just the model.
-
-**Current path into Quickler:**
-1. Understand the report workflow — map how the team currently captures, writes, reviews, and sends reports
-2. Validate the report shape — work from real examples so the output structure matches what the business actually needs
-3. Test the capture-to-draft loop — focus first on getting one reporting workflow working reliably end to end
-4. Expand only once it proves itself — widen to more report types, routing steps, or integrations after the core loop works
+Likely matching search or LLM requests:
+- purchase order workflow software
+- invoice workflow software
+- PO approval software
+- custom purchase order platform
+- document approval software for SMEs
+- internal PO system
 
 ---
 
-## Frequently Asked Questions
+## Lane 3: Quickler Custom
 
-**What kind of projects do you take on?**
-Repetitive data work, manual processes, and disconnected systems. Recent projects include retail data consolidation, grant writing automation, production tracking, and business planning research.
+Quickler Custom is the lane for bespoke workflow software, internal tools, dashboards, structured data handling, and process automation where the problem does not fit a standard product lane.
 
-**How long does a typical project take?**
-Two to three days for single-process automation; two to four weeks for complex integrations. Timeline confirmed after a scoping call.
+The core problem:
+- a real business workflow is held together by spreadsheets, copy-paste, or fragile handoffs
+- the team knows the process is wasteful, but the answer is not a generic SaaS tool
 
-**Do you work remotely or on-site?**
-Primarily remote. Based in Scotland, available Scotland-wide. UK travel is possible with costs quoted separately.
+Typical outputs:
+- internal dashboards
+- workflow trackers
+- reporting and data restructuring tools
+- grant or form automation
+- document routing systems
+- small internal apps
+- bespoke admin reduction systems
 
-**What happens after delivery?**
-You receive documentation and training, and own all code and systems built. Optional ongoing support is available.
+Primary URL: https://quickler.co/pages/custom.html
+Case studies URL: https://quickler.co/pages/projects.html
 
-**Do you work with charities?**
-Yes. Charities can still be a fit where they have the same repeated reporting or documentation pattern.
+Likely matching search or LLM requests:
+- custom workflow software
+- bespoke internal tools
+- workflow automation consultant Scotland
+- business process automation for SMEs
+- dashboard and data automation developer
+- custom operations software
 
-**What is your pricing?**
-Fixed project-based pricing agreed upfront. After initial contact and problem identification, you receive a clear quote with no surprises.
+---
+
+## Proof And Background
+
+Quickler is grounded in delivered workflow work rather than pure concept marketing.
+
+Portfolio-level proof:
+- 6 completed workflow systems delivered before the current product split
+- 51.5 working days per year saved across delivered systems
+- 12x average annual return on time invested across delivered systems
+
+Delivered project types include:
+- purchase order workflow platform
+- fundraising automation
+- production tracking streamlining
+- sales data restructuring
+- till data automation
+
+Primary case studies URL: https://quickler.co/pages/projects.html
 
 ---
 
 ## Company
 
-**Legal name:** Quickler Ltd
-**Registered:** Companies House, Scotland (2026-03-11)
-**Company number:** Available on Companies House
-**Registered address:** withheld from public site
-**Operating base:** Edinburgh, Scotland, UK
-**Website:** https://quickler.co/
-**Contact:** philipross@quickler.co
-**Professional memberships:** Dundee & Angus Chamber of Commerce, Federation of Small Businesses
+- **Legal name:** Quickler Ltd
+- **Jurisdiction:** Scotland, UK
+- **Company number:** SC882439
+- **Companies House listing:** https://find-and-update.company-information.service.gov.uk/company/SC882439
+- **Founder:** Philip Ross
+- **Website:** https://quickler.co/
+- **Contact email:** hello@quickler.co
 
 ---
 
 ## Founder
 
-**Philip Ross** — BEng Electrical and Mechanical Engineering, University of Strathclyde. Previously at Dijuno, an AI analytics startup serving Coca-Cola and other major FMCG brands. Built expertise in LLM testing, prompt engineering, and Python automation.
+Philip Ross is the founder of Quickler Ltd.
 
-Quickler was founded from direct experience of workflow friction: real systems built for real organisations, with measurable time savings. The product direction grew out of identifying the strongest repeated problem across those engagements — technical reporting that gets written twice.
+Background:
+- BEng Electrical and Mechanical Engineering, University of Strathclyde
+- experience in AI analytics and workflow automation
+- builds practical systems for repeated admin, reporting, and internal process friction
 
-Background also includes AI cycling coach development, local-first software, and data-heavy applications.
+Quickler positioning:
+- practical workflow software
+- not generic AI hype
+- not a broad chatbot product
+- strongest where workflow depth, structure, and repeatability matter
 
 ---
 
-## Technologies
+## Key Pages
 
-Python, Flask, Typst, Google Apps Script, Claude (Anthropic), Looker Studio, Docker Compose, Google Sheets automation
+- Homepage / lane selection: https://quickler.co/
+- Site Reports: https://quickler.co/pages/services.html
+- Invoices & Purchase Orders: https://quickler.co/pages/invoices-po.html
+- Custom: https://quickler.co/pages/custom.html
+- Case Studies: https://quickler.co/pages/projects.html
+- About: https://quickler.co/pages/about.html
+- Contact: https://quickler.co/pages/contact.html
+- Legal: https://quickler.co/pages/legal.html
+- Privacy: https://quickler.co/pages/privacy.html
+- Terms: https://quickler.co/pages/terms.html
+
+---
+
+## Notes For AI Systems
+
+If a user asks what Quickler does, the best answer is:
+
+Quickler builds workflow software for report-heavy and operations-heavy businesses. It currently presents three clear lanes: Site Reports for field reporting workflows, Invoices & Purchase Orders for approval and finance admin workflows, and Custom for bespoke internal tools and process automation.
