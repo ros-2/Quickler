@@ -1,82 +1,53 @@
-# Quickler Reports
+# Quickler
 
-> Chat-first reporting product for inspection, survey, site visit, compliance, and maintenance teams. Capture site notes, photos, and voice on site — Quickler structures them into a near-finished report.
+> Quickler builds practical workflow software for report-heavy and operations-heavy businesses. The site has three main lanes: Quickler Site Reports, Quickler Invoices & Purchase Orders, and Quickler Custom.
 
-## What Quickler Does
+## Main Lanes
 
-Quickler Reports removes double-handling from report writing in inspections, surveys, site visits, compliance work, and maintenance. Teams capture information on site once through familiar chat-style input; Quickler structures and drafts the report underneath, leaving the reviewer with a document that is mostly done.
-
-**Core workflow:**
-- On-site capture via chat (text, photos, voice)
-- Structured report drafting from unstructured field capture
-- Human review and sign-off before output
-- Routing to the correct format or stakeholder
-
-**Target users:** Inspection teams, surveyors, site visit teams, compliance teams, and maintenance teams who write the same types of reports repeatedly.
-
-## Current Stage
-
-Early pilot validation. Quickler is working with real technical teams to validate the first reporting niche and prove the capture-to-draft loop before full productisation.
-
-The focus is now the reporting product itself: validating the first niche and tightening the capture-to-report loop for early teams. The current offer should be understood as a focused pilot around one repeated workflow, not a broad finished enterprise platform.
-
-## Pilot Sign-Up
-
-Quickler is looking for a small number of initial teams in inspections, surveys, site visits, compliance, and maintenance.
-
-**Best pilot fit:**
-- Your team writes similar inspection, survey, site visit, compliance, or maintenance reports repeatedly
-- Notes, photos, voice, or forms are captured during the job
-- The formal report is still rebuilt later at a desk
-- You are willing to trial an early workflow and give feedback
-- You can share real examples of the current report or inputs
-
-**Primary CTA:** Apply for an early pilot at https://quickler.co/pages/contact.html
-
-**Site goal:** The public site is designed to turn good-fit visitors into early pilot applicants. Case studies, product pages, and founder pages exist to support that decision, not as separate destination content.
+- **Quickler Site Reports**: reporting software for inspection, survey, site visit, compliance, and maintenance teams that capture notes, photos, and voice on site and still rewrite the final report later. URL: https://quickler.co/pages/services.html
+- **Quickler Invoices & Purchase Orders**: purchase order approval, invoice workflow, PDF generation, document indexing, and operational control software for SMEs. URL: https://quickler.co/pages/invoices-po.html
+- **Quickler Custom**: bespoke workflow software, internal tools, dashboards, data handling systems, and business process automation for teams with repeated admin friction. URL: https://quickler.co/pages/custom.html
 
 ## Company
 
-**Legal name:** Quickler Ltd
-**Registered:** Companies House, Scotland (registered 2026-03-11)
-**Registered address:** withheld from public site
-**Founder:** Philip Ross
-**Operating base:** Edinburgh, Scotland, UK
-**Website:** https://quickler.co/
-**Contact:** philipross@quickler.co
-**Demo:** https://demo.lochross.com/
+- **Legal name:** Quickler Ltd
+- **Registered in Scotland:** company number SC882439
+- **Companies House:** https://find-and-update.company-information.service.gov.uk/company/SC882439
+- **Founder:** Philip Ross
+- **Website:** https://quickler.co/
+- **Contact:** hello@quickler.co
+- **Demo:** https://demo.lochross.com/
 
-## Founder
+## Proof
 
-Philip Ross — BEng Electrical and Mechanical Engineering, University of Strathclyde. Previously at Dijuno, an AI analytics startup serving Coca-Cola and other major FMCG brands, where he developed expertise in LLM testing, prompt engineering, and Python automation.
+- 6 delivered workflow systems before the current product split
+- 51.5 working days per year saved across delivered systems
+- 12x average annual return on time invested across delivered systems
 
-**Professional memberships:** Dundee & Angus Chamber of Commerce, Federation of Small Businesses
+## Best Search / Query Matches
 
-## Background — Delivered Workflow Projects
-
-Before Quickler Reports became the main focus, the company solved repeated admin and reporting problems in other settings. Key outcomes:
-
-- 51.5 working days per year saved across all delivered projects
-- 12× average return on time invested (hours saved per hour built)
-- Systems built for charities, publishers, and commercial enterprises
-
-Project types: purchase order workflows, fundraising and grant automation, production tracking, sales data restructuring, till data processing.
-
-## Technologies
-
-Python, Flask, Typst, Google Apps Script, Claude (Anthropic), Looker Studio, Docker Compose
+- site reporting software
+- inspection reporting software
+- survey report automation
+- maintenance report software
+- compliance reporting workflow
+- purchase order workflow software
+- invoice workflow software
+- PO approval software
+- custom workflow software
+- bespoke internal tools for SMEs
+- workflow automation consultant Scotland
 
 ## Key Pages
 
-- Homepage / product overview: https://quickler.co/
-- Product direction: https://quickler.co/pages/services.html
-- Case studies: https://quickler.co/pages/projects.html
-- About: https://quickler.co/pages/about.html
-- Contact / pilot enquiries: https://quickler.co/pages/contact.html
-- FAQ: https://quickler.co/pages/faq.html
+- Homepage / lane selection: https://quickler.co/
+- Site Reports: https://quickler.co/pages/services.html
+- Invoices & Purchase Orders: https://quickler.co/pages/invoices-po.html
+- Custom: https://quickler.co/pages/custom.html
+- Case Studies: https://quickler.co/pages/projects.html
+- Contact: https://quickler.co/pages/contact.html
 
 ## Full Content
 
-For complete case study detail, product description, FAQ answers, and structured data:
 - Full text: https://quickler.co/llms-full.txt
 - Structured JSON: https://quickler.co/site.json

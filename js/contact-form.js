@@ -1,6 +1,7 @@
 // Handle contact form submission
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contact-form');
+    const formStatus = document.getElementById('contact-form-status');
 
     if (contactForm) {
         contactForm.addEventListener('submit', async function(e) {
@@ -9,6 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const form = e.target;
             const submitBtn = document.getElementById('submit-btn');
             const originalText = submitBtn.textContent;
+
+            form.dataset.formState = 'submitting';
+            if (formStatus) {
+                formStatus.textContent = 'Submitting form';
+            }
 
             // Show sending state
             submitBtn.textContent = 'Sending...';
@@ -33,11 +39,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
 
                     // Show sent state
+                    form.dataset.formState = 'success';
+                    if (formStatus) {
+                        formStatus.textContent = 'Form submitted successfully';
+                    }
                     submitBtn.textContent = 'Sent! I\'ll reply within 24 hours';
 
                     // Reset form after 10 seconds
                     setTimeout(() => {
                         form.reset();
+                        form.dataset.formState = 'idle';
+                        if (formStatus) {
+                            formStatus.textContent = 'Form ready';
+                        }
                         submitBtn.textContent = originalText;
                         submitBtn.disabled = false;
                     }, 10000);
@@ -53,8 +67,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
 
                 // Show error and reset
+                form.dataset.formState = 'error';
+                if (formStatus) {
+                    formStatus.textContent = 'Form submission failed';
+                }
                 submitBtn.textContent = 'Failed - try again';
                 setTimeout(() => {
+                    form.dataset.formState = 'idle';
+                    if (formStatus) {
+                        formStatus.textContent = 'Form ready';
+                    }
                     submitBtn.textContent = originalText;
                     submitBtn.disabled = false;
                 }, 3000);

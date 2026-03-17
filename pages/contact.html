@@ -10,23 +10,50 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Apply For An Early Pilot | Quickler Reports</title>
-    <meta name="title" content="Apply For An Early Pilot | Quickler Reports">
-    <meta name="description" content="Apply for an early Quickler Reports pilot if your team produces similar reports repeatedly and still rewrites them later at a desk.">
-    <meta name="keywords" content="Quickler pilot application, early pilot, technical reporting software, field reporting, Scotland">
+    <title>Contact Quickler | Site Reports, Invoices &amp; Purchase Orders, and Custom Workflows</title>
+    <meta name="title" content="Contact Quickler | Site Reports, Invoices &amp; Purchase Orders, and Custom Workflows">
+    <meta name="description" content="Contact Quickler about site reporting pilots, invoice and purchase order workflows, or custom workflow software and internal tools.">
+    <meta name="keywords" content="contact Quickler, reporting software pilot, purchase order workflow enquiry, custom workflow software contact, Scotland">
     <meta name="author" content="Philip Ross">
     <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://quickler.co/pages/contact.html">
-    <meta property="og:title" content="Apply For An Early Pilot | Quickler Reports">
-    <meta property="og:description" content="Apply for an early pilot for teams with repeated reporting workflows.">
+    <meta property="og:title" content="Contact Quickler | Site Reports, Invoices &amp; Purchase Orders, and Custom Workflows">
+    <meta property="og:description" content="Contact Quickler about site reporting pilots, invoice and purchase order workflows, or custom workflow software.">
     <meta property="og:locale" content="en_GB">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Apply For An Early Pilot | Quickler Reports">
-    <meta name="twitter:description" content="Apply for an early Quickler Reports pilot for teams with repeated reporting workflows.">
+    <meta name="twitter:title" content="Contact Quickler | Site Reports, Invoices &amp; Purchase Orders, and Custom Workflows">
+    <meta name="twitter:description" content="Contact Quickler about site reporting pilots, invoice workflows, or bespoke internal systems.">
     <link rel="canonical" href="https://quickler.co/pages/contact.html">
     <link rel="alternate" hreflang="en-gb" href="https://quickler.co/pages/contact.html">
     <link rel="alternate" hreflang="x-default" href="https://quickler.co/pages/contact.html">
+    <meta name="quickler:agent-entry" content="contact-form">
+
+    <script type="application/json" id="agent-contact-map">
+    {
+        "page_type": "contact_form",
+        "form_id": "contact-form",
+        "submission_method": "POST",
+        "preferred_fields_order": [
+            "name",
+            "company",
+            "email",
+            "lane",
+            "report_volume",
+            "report_type",
+            "sample_access",
+            "message"
+        ],
+        "lane_options": [
+            "Site Reports",
+            "Invoices & Purchase Orders",
+            "Custom",
+            "Unsure"
+        ],
+        "required_fields": ["name", "email", "message"],
+        "success_signal": "data-form-state=success"
+    }
+    </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +62,8 @@
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <nav>
+    <a href="#main-content" class="visually-hidden">Skip to main content</a>
+    <nav aria-label="Primary" data-agent-role="primary-navigation">
         <a href="/" class="nav-name">
             <img src="/assets/logos/quickler-logo.svg" alt="Quickler">
         </a>
@@ -44,99 +72,116 @@
             <span class="hamburger-line"></span>
             <span class="hamburger-line"></span>
         </button>
-        <div class="nav-menu">
-            <a href="/">Home</a>
-            <a href="/pages/services.html">Product</a>
-            <a href="/pages/projects.html">Case Studies</a>
-            <a href="/pages/about.html">About</a>
-            <a href="/pages/contact.html">Apply</a>
+        <div class="nav-menu" data-agent-role="lane-navigation">
+            <a href="/" data-agent-target="home">Home</a>
+            <a href="/pages/services.html" data-agent-target="site-reports">Site Reports</a>
+            <a href="/pages/invoices-po.html" data-agent-target="invoices-po">Invoices &amp; POs</a>
+            <a href="/pages/custom.html" data-agent-target="custom">Custom</a>
+            <a href="/pages/projects.html" data-agent-target="case-studies">Case Studies</a>
+            <a href="/pages/contact.html" data-agent-target="contact">Contact</a>
         </div>
     </nav>
 
-    <section id="top">
+    <main id="main-content" data-agent-page="contact">
+    <section id="top" aria-labelledby="contact-page-title">
         <div class="contact-grid">
             <div class="contact-panel">
-                <span class="eyebrow">Early Pilot</span>
-                <h1>Apply to become one of the first Quickler teams.</h1>
-                <p class="contact-copy">Quickler is looking for a small number of initial teams with repeated reporting workflows. If your staff capture notes, photos, or evidence during the job and still finish the report later at a desk, apply here.</p>
+                <span class="eyebrow">Contact Quickler</span>
+                <h1 id="contact-page-title">Tell Quickler which workflow you want fixed.</h1>
+                <p class="contact-copy">Use this page for any of the three Quickler lanes: Site Reports, Invoices &amp; Purchase Orders, or Custom. If the fit is strongest for Site Reports, that can still become an early pilot conversation.</p>
                 <ul>
                     <li>Email directly: <a href="mailto:hello@quickler.co">hello@quickler.co</a></li>
-                    <li>Best for: inspections, surveys, site visits, maintenance reports, compliance paperwork, and repeated technical reporting</li>
-                    <li>Early teams get direct founder support and a chance to shape the first product workflow.</li>
+                    <li>Best for: repeated reporting, invoice and PO workflows, internal tools, dashboards, and awkward operational admin</li>
+                    <li>Site Reports enquiries can still become early pilot conversations with direct founder support.</li>
                     <li>Typical response time: within one working day</li>
-                    <li>Best applications describe one report type, how often it happens, what gets captured during the job, and whether you can share examples.</li>
-                    <li>This is an early pilot intake, not a request for broad enterprise software.</li>
+                    <li>The best enquiries describe one workflow, how often it happens, where the drag is, and whether you can share examples.</li>
+                    <li>Quickler is built around practical workflow improvement, not broad enterprise transformation promises.</li>
                 </ul>
             </div>
 
             <div class="contact-form-shell">
-                <form class="contact-form" id="contact-form" action="https://formspree.io/f/mjknoeqd" method="POST">
+                <form class="contact-form" id="contact-form" action="https://formspree.io/f/mjknoeqd" method="POST" data-agent-form="quickler-contact" data-form-state="idle" aria-describedby="contact-form-help contact-form-status">
                     <div class="form-group">
                         <label for="name">Your name</label>
-                        <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+                        <input type="text" id="name" name="name" placeholder="Jane Smith" autocomplete="name" required data-agent-field="name">
                     </div>
 
                     <div class="form-group">
                         <label for="company">Company</label>
-                        <input type="text" id="company" name="company" placeholder="Acme Inspections Ltd">
+                        <input type="text" id="company" name="company" placeholder="Acme Inspections Ltd" autocomplete="organization" data-agent-field="company">
                     </div>
 
                     <div class="form-group">
                         <label for="email">Your email</label>
-                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" inputmode="email" required data-agent-field="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lane">Which Quickler lane fits best?</label>
+                        <select id="lane" name="lane" data-agent-field="lane">
+                            <option value="">Select a lane</option>
+                            <option value="Site Reports">Site Reports</option>
+                            <option value="Invoices & Purchase Orders">Invoices &amp; Purchase Orders</option>
+                            <option value="Custom">Custom</option>
+                            <option value="Unsure">Unsure</option>
+                        </select>
                     </div>
 
                     <div class="form-group">
                         <label for="report-volume">How often do you produce these reports?</label>
-                        <input type="text" id="report-volume" name="report_volume" placeholder="For example: 15 per week or 40 per month">
+                        <input type="text" id="report-volume" name="report_volume" placeholder="For example: 15 per week, 40 per month, or 20 approvals per week" data-agent-field="report_volume">
                     </div>
 
                     <div class="form-group">
-                        <label for="report-type">What report or document should the pilot start with?</label>
-                        <input type="text" id="report-type" name="report_type" placeholder="For example: site inspection report or maintenance visit summary">
+                        <label for="report-type">What workflow, report, or document should Quickler start with?</label>
+                        <input type="text" id="report-type" name="report_type" placeholder="For example: site inspection report, purchase order approvals, or grant application workflow" data-agent-field="report_type">
                     </div>
 
                     <div class="form-group">
-                        <label for="sample-access">Could you share examples of the current report or inputs?</label>
-                        <input type="text" id="sample-access" name="sample_access" placeholder="For example: yes, anonymised examples / maybe / not yet">
+                        <label for="sample-access">Could you share examples of the current workflow or inputs?</label>
+                        <input type="text" id="sample-access" name="sample_access" placeholder="For example: yes, anonymised examples / maybe / not yet" data-agent-field="sample_access">
                     </div>
 
                     <div class="form-group">
-                        <label for="message">Pilot application</label>
-                        <textarea id="message" name="message" placeholder="What kind of reports do you produce, what gets captured during the job, what happens later at the desk, and what would make a pilot worthwhile for your team?" required></textarea>
+                        <label for="message">Your enquiry</label>
+                        <textarea id="message" name="message" placeholder="What workflow are you trying to improve, what happens today, where does the admin drag sit, and what would a useful result look like for your team?" required data-agent-field="message"></textarea>
                     </div>
+
+                    <p class="visually-hidden" id="contact-form-help">Required fields are name, email, and message. If unsure which lane fits, choose Unsure and describe the workflow in the message field.</p>
+                    <p class="visually-hidden" id="contact-form-status" aria-live="polite" data-agent-status="form-status">Form ready</p>
 
                     <div class="form-submit">
-                        <button type="submit" class="btn btn-primary" id="submit-btn">Apply for pilot access</button>
+                        <button type="submit" class="btn btn-primary" id="submit-btn">Send enquiry</button>
                     </div>
-                    <p class="form-note">By sending this form, you agree that Quickler may use the details you provide to review your pilot application and reply to you. See the <a href="/pages/privacy.html">Privacy Policy</a>.</p>
+                    <p class="form-note">By sending this form, you agree that Quickler may use the details you provide to review your enquiry and reply to you. See the <a href="/pages/privacy.html">Privacy Policy</a>.</p>
                 </form>
             </div>
         </div>
     </section>
 
-    <section class="section-tight">
+    <section class="section-tight" aria-labelledby="contact-next-steps-title">
         <div class="card-link-grid">
             <article class="card-link">
-                <span class="card-link-kicker">After apply</span>
-                <h3 class="card-link-title">Quick fit review</h3>
-                <p class="card-link-copy">Quickler checks whether the report type is repeated enough, structured enough, and painful enough to justify a focused pilot.</p>
+                <span class="card-link-kicker">After contact</span>
+                <h3 class="card-link-title" id="contact-next-steps-title">Quick fit review</h3>
+                <p class="card-link-copy">Quickler checks whether the workflow is repeated enough, painful enough, and specific enough to justify the right next step.</p>
             </article>
             <article class="card-link">
                 <span class="card-link-kicker">What helps</span>
                 <h3 class="card-link-title">Real examples beat abstract requirements</h3>
-                <p class="card-link-copy">The best early conversations use a real report, current inputs, and a clear sense of where time is lost between site work and final output.</p>
+                <p class="card-link-copy">The best early conversations use a real workflow, current inputs, and a clear sense of where time is being lost or control is breaking down.</p>
             </article>
             <article class="card-link">
                 <span class="card-link-kicker">Current scope</span>
                 <h3 class="card-link-title">One workflow first</h3>
-                <p class="card-link-copy">The early pilot offer is intentionally narrow. One repeated workflow is a better starting point than a broad request to transform everything at once.</p>
+                <p class="card-link-copy">Whether it becomes a pilot or a custom build, one repeated workflow is a better starting point than a vague request to fix everything at once.</p>
             </article>
         </div>
     </section>
+    </main>
 
     <footer>
-        <p>Quickler Ltd · <a href="mailto:hello@quickler.co">hello@quickler.co</a> · <a href="/pages/legal.html">Legal</a> · <a href="/pages/privacy.html">Privacy</a> · <a href="/pages/terms.html">Terms</a> · <a href="/pages/cookies.html">Cookies</a> · <a href="#" data-cookie-settings>Cookie settings</a> · <a href="#top">Back to top ↑</a></p>
+        <p>Quickler Ltd · <a href="https://find-and-update.company-information.service.gov.uk/company/SC882439" target="_blank" rel="noopener noreferrer">Company No. SC882439</a> · <a href="mailto:hello@quickler.co">hello@quickler.co</a> · <a href="/pages/legal.html">Legal</a> · <a href="/pages/privacy.html">Privacy</a> · <a href="/pages/terms.html">Terms</a> · <a href="/pages/cookies.html">Cookies</a> · <a href="#" data-cookie-settings>Cookie settings</a> · <a href="#top">Back to top ↑</a></p>
         <div class="footer-social">
             <a class="footer-social-link" href="https://www.linkedin.com/company/quickler/" target="_blank" rel="noopener noreferrer">
                 <img src="/assets/icons/linkedin.svg" alt="">
