@@ -252,12 +252,23 @@ body > section#top:first-of-type {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: clamp(24px, 4vw, 40px);
+    padding: clamp(24px, 4vw, 40px) clamp(24px, 4vw, 40px) 120px;
 }
 
 .router-shell {
     width: min(100%, 1180px);
     padding: 0;
+}
+
+.router-brand {
+    display: flex;
+    justify-content: center;
+    margin-bottom: clamp(28px, 5vw, 44px);
+}
+
+.router-brand img {
+    width: min(520px, 72vw);
+    height: auto;
 }
 
 .router-grid {
@@ -304,6 +315,37 @@ body > section#top:first-of-type {
         linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(250, 252, 255, 0.82)),
         linear-gradient(135deg, rgba(47, 107, 255, 0.16), rgba(244, 63, 140, 0.12));
     border-color: rgba(47, 107, 255, 0.18);
+}
+
+.router-footer {
+    position: fixed;
+    left: 50%;
+    bottom: 18px;
+    transform: translateX(-50%);
+    width: min(calc(100% - 24px), 1180px);
+    padding: 14px 18px;
+    border: 1px solid rgba(24, 52, 132, 0.12);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.78);
+    box-shadow: 0 18px 48px rgba(18, 41, 111, 0.08);
+    backdrop-filter: blur(18px) saturate(140%);
+    text-align: center;
+}
+
+.router-footer p {
+    color: var(--ink-soft);
+    font-size: 0.87rem;
+    line-height: 1.6;
+}
+
+.router-footer a {
+    text-decoration: none;
+    color: var(--accent-mid);
+}
+
+.router-footer a:hover,
+.router-footer a:focus-visible {
+    color: var(--accent);
 }
 
 .hero-content,
@@ -1527,12 +1569,23 @@ footer a {
     }
 
     .router-main {
-        padding: 18px;
+        padding: 18px 18px 132px;
     }
 
     .router-button {
         min-height: 140px;
         padding: 24px;
+    }
+
+    .router-brand img {
+        width: min(360px, 78vw);
+    }
+
+    .router-footer {
+        position: static;
+        transform: none;
+        width: calc(100% - 24px);
+        margin: 0 auto 12px;
     }
 
     .cookie-banner {
