@@ -291,14 +291,21 @@ body > section#top:first-of-type {
         linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(246, 250, 255, 0.76)),
         var(--brand-gradient-soft);
     box-shadow: var(--shadow-card);
-    transition: transform 0.24s ease, box-shadow 0.24s ease, border-color 0.24s ease;
+    transition: transform 0.24s ease, box-shadow 0.24s ease, border-color 0.24s ease, background 0.24s ease;
 }
 
 .router-button:hover,
 .router-button:focus-visible {
     transform: translateY(-6px);
-    border-color: var(--line-strong);
+    border-color: rgba(47, 107, 255, 0.26);
+    background: var(--brand-gradient);
     box-shadow: var(--shadow-hover);
+}
+
+.router-button:active {
+    transform: translateY(-2px) scale(0.99);
+    background: linear-gradient(135deg, #1f5fff 0%, #5a4fcf 42%, #7c3aed 72%, #f43f8c 100%);
+    box-shadow: 0 16px 34px rgba(47, 107, 255, 0.24);
 }
 
 .router-button span {
@@ -308,6 +315,13 @@ body > section#top:first-of-type {
     color: var(--accent);
     letter-spacing: -0.02em;
     text-wrap: balance;
+    transition: color 0.24s ease;
+}
+
+.router-button:hover span,
+.router-button:focus-visible span,
+.router-button:active span {
+    color: #ffffff;
 }
 
 .router-button-featured {
