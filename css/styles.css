@@ -286,11 +286,12 @@ section#top {
 
 .hero-fork {
     grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
 }
 
 .hero-content-wide {
     min-height: 0;
-    max-width: 1040px;
+    width: min(100%, 1040px);
     margin: 0 auto;
     text-align: center;
 }
@@ -1082,8 +1083,8 @@ section#top {
 .report-photo-card img {
     width: 100%;
     height: auto;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
+    aspect-ratio: auto;
+    object-fit: contain;
     display: block;
     padding: 16px 16px 0;
     background: #f7faff;
