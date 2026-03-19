@@ -44,6 +44,21 @@ html {
     scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
 body {
     min-height: 100vh;
     min-height: 100svh;
@@ -102,6 +117,29 @@ img.wordmark {
 
 a {
     color: inherit;
+}
+
+:focus-visible {
+    outline: 3px solid rgba(47, 107, 255, 0.42);
+    outline-offset: 3px;
+}
+
+.visually-hidden:focus,
+.visually-hidden:focus-visible {
+    position: fixed;
+    top: 14px;
+    left: 14px;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 10px 14px;
+    clip: auto;
+    white-space: normal;
+    border-radius: 999px;
+    background: #ffffff;
+    border: 1px solid var(--line-strong);
+    box-shadow: var(--shadow-soft);
+    z-index: 1000;
 }
 
 h1,
@@ -213,7 +251,8 @@ nav {
 }
 
 .nav-menu a:hover,
-.nav-menu a:focus-visible {
+.nav-menu a:focus-visible,
+.nav-menu a[aria-current="page"] {
     background: rgba(47, 107, 255, 0.08);
     color: var(--accent);
     transform: translateY(-1px);
@@ -223,10 +262,17 @@ section {
     width: min(calc(100% - (var(--page-gutter) * 2)), var(--content-width));
     margin: 0 auto;
     padding: var(--section-space) 0;
+    content-visibility: auto;
+    contain-intrinsic-size: 1px 840px;
 }
 
 body > section#top:first-of-type {
     padding-top: clamp(112px, 16vw, 148px) !important;
+}
+
+section#top {
+    content-visibility: visible;
+    contain-intrinsic-size: auto;
 }
 
 .hero {
@@ -275,6 +321,10 @@ body > section#top:first-of-type {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 20px;
+}
+
+.router-grid[role="list"] {
+    list-style: none;
 }
 
 .router-button {
@@ -953,6 +1003,8 @@ body > section#top:first-of-type {
 .report-photo-card img {
     width: 100%;
     height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
     display: block;
     padding: 16px 16px 0;
     background: #f7faff;

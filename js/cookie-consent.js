@@ -2,6 +2,7 @@
     const CONSENT_KEY = "quickler_cookie_consent_v1";
     const GA_ID = "G-NM61T48RDV";
     const BANNER_ID = "quickler-cookie-banner";
+    let navMenuIdCounter = 0;
 
     function getConsent() {
         try {
@@ -84,11 +85,71 @@
         });
     }
 
+    function initNavigation() {
+        const navs = document.querySelectorAll("nav");
+        navs.forEach(function (nav) {
+            const toggle = nav.querySelector(".nav-toggle");
+            const menu = nav.querySelector(".nav-menu");
+            if (!toggle || !menu) return;
+
+            toggle.removeAttribute("onclick");
+
+            if (!menu.id) {
+                navMenuIdCounter += 1;
+                menu.id = "primary-nav-menu-" + navMenuIdCounter;
+            }
+
+            toggle.setAttribute("aria-controls", menu.id);
+
+            function syncState() {
+                const isOpen = nav.classList.contains("nav-open");
+                toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+                toggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+            }
+
+            function closeMenu() {
+                nav.classList.remove("nav-open");
+                syncState();
+            }
+
+            toggle.addEventListener("click", function () {
+                nav.classList.toggle("nav-open");
+                syncState();
+            });
+
+            document.addEventListener("click", function (event) {
+                if (!event.target.closest("nav")) {
+                    closeMenu();
+                }
+            });
+
+            document.addEventListener("keydown", function (event) {
+                if (event.key === "Escape") {
+                    closeMenu();
+                }
+            });
+
+            menu.querySelectorAll("a").forEach(function (link) {
+                link.addEventListener("click", closeMenu);
+                const href = link.getAttribute("href") || "";
+                const current = window.location.pathname.replace(/\/+$/, "") || "/";
+                const target = href.replace(/^https?:\/\/[^/]+/, "").replace(/\/+$/, "") || "/";
+                if (target === current) {
+                    link.setAttribute("aria-current", "page");
+                }
+            });
+
+            syncState();
+        });
+    }
+
     if (getConsent() === "granted") {
         loadAnalytics();
     }
 
     document.addEventListener("DOMContentLoaded", function () {
+        initNavigation();
+
         if (!getConsent()) {
             openBanner();
         }
