@@ -275,6 +275,13 @@ section#top {
     contain-intrinsic-size: auto;
 }
 
+.home-hero-section {
+    width: 100%;
+    max-width: none;
+    padding-left: var(--page-gutter);
+    padding-right: var(--page-gutter);
+}
+
 .hero {
     display: grid;
     grid-template-columns: minmax(0, 1.55fr) minmax(300px, 0.9fr);
@@ -286,7 +293,7 @@ section#top {
 
 .hero-fork {
     grid-template-columns: minmax(0, 1fr);
-    width: min(100%, 1040px);
+    width: min(calc(100% - (var(--page-gutter) * 2)), 1040px);
     margin: 0 auto;
 }
 
