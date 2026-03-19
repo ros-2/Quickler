@@ -276,12 +276,9 @@ section#top {
 }
 
 .home-hero-section {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: none;
-    padding-left: var(--page-gutter);
-    padding-right: var(--page-gutter);
+    width: min(calc(100% - (var(--page-gutter) * 2)), 1240px);
+    max-width: 1240px;
+    padding-top: clamp(22px, 3vw, 34px);
 }
 
 .hero {
@@ -1833,6 +1830,80 @@ footer a {
     padding-top: clamp(28px, 4vw, 34px);
 }
 
+.home-hero-shell {
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+}
+
+.home-hero-panel {
+    width: min(100%, 980px);
+    display: grid;
+    gap: 18px;
+    justify-items: center;
+    text-align: center;
+    padding: clamp(30px, 4.5vw, 48px);
+    border: 1px solid rgba(24, 52, 132, 0.1);
+    border-radius: clamp(32px, 5vw, 44px);
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(247, 250, 255, 0.82)),
+        var(--brand-gradient-soft);
+    box-shadow: var(--shadow-card);
+}
+
+.home-hero-panel h1 {
+    max-width: 11ch;
+    margin: 0;
+    font-size: clamp(2.8rem, 5.6vw, 4.9rem);
+    line-height: 1;
+    letter-spacing: -0.05em;
+    text-wrap: balance;
+}
+
+.home-hero-panel .hero-text {
+    max-width: 42rem;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.home-hero-panel .hero-credentials {
+    max-width: 46rem;
+    margin: 0;
+}
+
+.home-hero-panel .hero-actions {
+    justify-content: center;
+}
+
+.home-hero-strip {
+    width: min(100%, 980px);
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.home-hero-chip {
+    display: grid;
+    gap: 8px;
+    min-height: 100%;
+    padding: 22px 24px;
+    border: 1px solid rgba(24, 52, 132, 0.1);
+    border-radius: 26px;
+    background: rgba(255, 255, 255, 0.72);
+    box-shadow: 0 14px 30px rgba(18, 41, 111, 0.07);
+    text-align: center;
+}
+
+.home-hero-chip strong {
+    color: var(--accent);
+    font-size: 0.95rem;
+}
+
+.home-hero-chip p {
+    margin: 0;
+    color: var(--ink-soft);
+}
+
 .proof-header {
     max-width: 48rem;
     margin-left: auto;
@@ -1943,6 +2014,76 @@ footer a {
     grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.home-lane-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.home-lane-card {
+    position: relative;
+    display: grid;
+    gap: 14px;
+    min-height: 100%;
+    padding: clamp(24px, 3vw, 32px);
+    text-decoration: none;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(246, 250, 255, 0.78)),
+        var(--brand-gradient-soft);
+    box-shadow: var(--shadow-card);
+    transition: transform 0.24s ease, box-shadow 0.24s ease, border-color 0.24s ease;
+}
+
+.home-lane-card:hover,
+.home-lane-card:focus-visible {
+    transform: translateY(-5px);
+    border-color: rgba(47, 107, 255, 0.24);
+    box-shadow: var(--shadow-hover);
+}
+
+.home-lane-link {
+    margin-top: auto;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.home-proof-band {
+    width: min(100%, 980px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+    gap: 22px;
+    align-items: center;
+    padding: clamp(28px, 4vw, 38px);
+    border: 1px solid rgba(24, 52, 132, 0.1);
+    border-radius: clamp(28px, 4vw, 36px);
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.86), rgba(247, 250, 255, 0.8)),
+        var(--brand-gradient-soft);
+    box-shadow: var(--shadow-card);
+}
+
+.home-proof-copy {
+    max-width: 42rem;
+}
+
+.home-proof-copy h2,
+.home-proof-copy p {
+    text-wrap: balance;
+}
+
+.home-proof-actions {
+    display: grid;
+    gap: 12px;
+    justify-items: stretch;
+}
+
+.home-proof-actions .btn {
+    justify-content: center;
+}
+
 @media (max-width: 980px) {
     nav {
         top: max(10px, env(safe-area-inset-top, 0px));
@@ -2000,6 +2141,7 @@ footer a {
     .home-fit-grid,
     .home-pilot-fit-grid,
     .home-use-case-grid,
+    .home-hero-strip,
     .balanced-grid-3,
     .balanced-grid-2,
     .content-duo,
@@ -2008,6 +2150,7 @@ footer a {
     .home-pilot-layout,
     .home-pilot-steps,
     .home-proof-grid,
+    .home-lane-grid,
     .fork-grid,
     .router-grid,
     .invoice-showcase-grid,
@@ -2029,6 +2172,20 @@ footer a {
     .section-header {
         flex-direction: column;
         align-items: start;
+    }
+
+    .home-hero-panel {
+        padding: 32px 24px;
+        border-radius: 30px;
+    }
+
+    .home-hero-panel h1 {
+        max-width: 11ch;
+        font-size: clamp(2.5rem, 10vw, 4rem);
+    }
+
+    .home-proof-band {
+        grid-template-columns: 1fr;
     }
 
     .section-stats {
@@ -2375,7 +2532,8 @@ footer a {
 
     .home-fit-grid,
     .home-pilot-fit-grid,
-    .home-proof-grid {
+    .home-proof-grid,
+    .home-lane-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
@@ -2385,7 +2543,8 @@ footer a {
 
     .home-workflow-shell,
     .home-pilot-layout,
-    .content-duo {
+    .content-duo,
+    .home-proof-band {
         grid-template-columns: 1fr;
     }
 
