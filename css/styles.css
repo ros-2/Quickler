@@ -276,6 +276,8 @@ section#top {
 }
 
 .home-hero-section {
+    display: flex;
+    justify-content: center;
     width: 100%;
     max-width: none;
     padding-left: var(--page-gutter);
@@ -293,8 +295,10 @@ section#top {
 
 .hero-fork {
     grid-template-columns: minmax(0, 1fr);
-    width: min(calc(100% - (var(--page-gutter) * 2)), 1040px);
-    margin: 0 auto;
+    flex: 0 1 1040px;
+    width: 100%;
+    max-width: 1040px;
+    margin: 0;
 }
 
 .hero-content-wide {
