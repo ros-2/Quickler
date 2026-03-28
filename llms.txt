@@ -1,16 +1,16 @@
-# Quickler
+# quickler
 
-> Quickler builds practical workflow software for report-heavy and operations-heavy businesses. The site has three main lanes: Quickler Site Reports, Quickler Invoices & Purchase Orders, and Quickler Custom.
+> quickler builds practical workflow software for report-heavy and operations-heavy businesses. The site has three main lanes: quickler Site Reports, quickler Invoices & Purchase Orders, and quickler Custom.
 
 ## Main Lanes
 
-- **Quickler Site Reports**: reporting software for inspection, survey, site visit, compliance, and maintenance teams that capture notes, photos, and voice on site and still rewrite the final report later. URL: https://quickler.co/pages/services.html
-- **Quickler Invoices & Purchase Orders**: purchase order approval, invoice workflow, PDF generation, document indexing, and operational control software for SMEs. URL: https://quickler.co/pages/invoices-po.html
-- **Quickler Custom**: bespoke workflow software, internal tools, dashboards, data handling systems, and business process automation for teams with repeated admin friction. URL: https://quickler.co/pages/custom.html
+- **quickler Site Reports**: reporting software for inspection, survey, site visit, compliance, and maintenance teams that capture notes, photos, and voice on site and still rewrite the final report later. URL: https://quickler.co/pages/services.html
+- **quickler Invoices & Purchase Orders**: purchase order approval, invoice workflow, PDF generation, document indexing, and operational control software for SMEs. URL: https://quickler.co/pages/invoices-po.html
+- **quickler Custom**: bespoke workflow software, internal tools, dashboards, data handling systems, and business process automation for teams with repeated admin friction. URL: https://quickler.co/pages/custom.html
 
 ## Company
 
-- **Legal name:** Quickler Ltd
+- **Legal name:** quickler Ltd
 - **Registered in Scotland:** company number SC882439
 - **Companies House:** https://find-and-update.company-information.service.gov.uk/company/SC882439
 - **Founder:** Philip Ross

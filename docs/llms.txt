@@ -1,10 +1,10 @@
-# Quickler Reports
+# quickler Reports
 
-> Quickler Ltd builds Quickler Reports, a chat-first technical reporting product for teams that capture information on site and rewrite it later into formal reports.
+> quickler Ltd builds quickler Reports, a chat-first technical reporting product for teams that capture information on site and rewrite it later into formal reports.
 
 ## Product
 
-Quickler Reports helps technical teams turn site notes, photos, and voice into finished reports faster. It is designed for repeated reporting workflows where evidence is captured in the field and rewritten later at a desk.
+quickler Reports helps technical teams turn site notes, photos, and voice into finished reports faster. It is designed for repeated reporting workflows where evidence is captured in the field and rewritten later at a desk.
 
 ### Best-fit users
 - Structural engineers
@@ -15,7 +15,7 @@ Quickler Reports helps technical teams turn site notes, photos, and voice into f
 
 ## Contact
 
-Legal name: Quickler Ltd
+Legal name: quickler Ltd
 Registered office: withheld from public site
 Website: https://quickler.co/
 Contact page: https://quickler.co/pages/contact.html
@@ -28,7 +28,7 @@ Contact page: https://quickler.co/pages/contact.html
 
 ## Background
 
-Quickler Ltd was founded by Philip Ross. He studied Electrical and Mechanical Engineering at the University of Strathclyde and previously worked at Dijuno, where he built experience in LLM testing, prompt engineering, and Python automation.
+quickler Ltd was founded by Philip Ross. He studied Electrical and Mechanical Engineering at the University of Strathclyde and previously worked at Dijuno, where he built experience in LLM testing, prompt engineering, and Python automation.
 
 ## Technologies
 

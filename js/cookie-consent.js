@@ -54,7 +54,7 @@
         banner.innerHTML = `
             <div class="cookie-banner-title">Cookie settings</div>
             <p class="cookie-banner-copy">
-                Quickler uses analytics cookies only if you allow them.
+                quickler uses analytics cookies only if you allow them.
                 They help me understand which pages are useful.
                 See the <a href="/pages/privacy.html">Privacy Policy</a>.
             </p>
