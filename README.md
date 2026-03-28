@@ -1,19 +1,19 @@
-# Quickler Reports Website
+# quickler Reports Website
 
-Public website for Quickler Ltd and Quickler Reports, a chat-first technical reporting product for survey teams, engineers, site inspectors, and compliance professionals.
+Public website for quickler Ltd and quickler Reports, a chat-first technical reporting product for survey teams, engineers, site inspectors, and compliance professionals.
 
 **Live Site:** [https://quickler.co/](https://quickler.co/)
 
 ## Project Overview
 
-This is a static website built with vanilla HTML, CSS, and JavaScript, hosted on GitHub Pages. The site presents Quickler Reports, supporting case studies, legal pages, and contact information for pilot enquiries.
+This is a static website built with vanilla HTML, CSS, and JavaScript, hosted on GitHub Pages. The site presents quickler Reports, supporting case studies, legal pages, and contact information for pilot enquiries.
 
 ### Key Features
 
 - **Case study showcase** with delivered workflow projects demonstrating measured time savings
 - **Responsive design** optimized for mobile and desktop
 - **Fast loading times** with optimized assets and minimal dependencies
-- **Product-led branding** for Quickler Reports and Quickler Ltd
+- **Product-led branding** for quickler Reports and quickler Ltd
 - **Contact form** integration with Formspree
 - **Mobile-friendly navigation** with hamburger menu
 
@@ -87,7 +87,7 @@ The site is optimized for AI assistants like ChatGPT, Claude, and Perplexity:
 - **Clear Content Hierarchy:** Well-organized content makes it easy for LLMs to parse
 - **Semantic HTML:** Proper markup helps LLMs understand content relationships
 
-This optimization ensures that when users ask AI assistants about Quickler Reports or Quickler Ltd, the assistants can provide accurate, up-to-date information.
+This optimization ensures that when users ask AI assistants about quickler Reports or quickler Ltd, the assistants can provide accurate, up-to-date information.
 
 ### Performance Optimizations
 
@@ -152,12 +152,12 @@ Then visit `http://localhost:8000`
 
 ## Contact
 
-For enquiries about the website or Quickler Reports:
-- **Company:** Quickler Ltd
+For enquiries about the website or quickler Reports:
+- **Company:** quickler Ltd
 - **Email:** philipross@quickler.co
 - **Website:** [https://quickler.co/](https://quickler.co/)
 - **Registered office:** 5 South Charlotte Street, Edinburgh, EH2 4AN
 
 ## License
 
-© 2026 Quickler Ltd. All rights reserved.
+© 2026 quickler Ltd. All rights reserved.

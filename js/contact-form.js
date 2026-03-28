@@ -1,4 +1,4 @@
-// Handle async form submission for Quickler enquiry forms
+// Handle async form submission for quickler enquiry forms
 document.addEventListener('DOMContentLoaded', function() {
     const forms = document.querySelectorAll('form[data-async-form]');
 

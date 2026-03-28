@@ -543,74 +543,6 @@ section#top {
     font-size: 0.98rem;
 }
 
-.membership-strip {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 12px;
-    margin-top: 18px;
-}
-
-.membership-label {
-    color: var(--ink-soft);
-    font-size: 0.82rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-}
-
-.membership-badges {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.membership-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 9px 13px;
-    border-radius: 999px;
-    border: 1px solid rgba(24, 52, 132, 0.08);
-    background: rgba(255, 255, 255, 0.56);
-    text-decoration: none;
-    color: var(--ink);
-    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
-}
-
-.membership-badge:hover,
-.membership-badge:focus-visible {
-    transform: translateY(-1px);
-    border-color: var(--line-strong);
-    box-shadow: var(--shadow-soft);
-    background: rgba(255, 255, 255, 0.8);
-}
-
-.membership-badge img {
-    width: auto;
-    height: 19px;
-    display: block;
-    filter: grayscale(1) contrast(1.05);
-    opacity: 0.9;
-}
-
-.membership-badge-fsb img {
-    height: 18px;
-    border-radius: 4px;
-}
-
-.membership-badge-dacc img {
-    height: 18px;
-    filter: brightness(0) saturate(100%);
-    opacity: 0.78;
-}
-
-.membership-badge span {
-    font-size: 0.84rem;
-    font-weight: 600;
-    color: var(--ink-soft);
-}
-
 .hero-actions {
     display: flex;
     flex-wrap: wrap;
@@ -816,6 +748,40 @@ section#top {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 18px;
     margin-top: 18px;
+}
+
+.demo-spotlight {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+    gap: 20px;
+    align-items: stretch;
+}
+
+.demo-spotlight-copy {
+    max-width: 40rem;
+}
+
+.demo-spotlight-points {
+    display: grid;
+    gap: 14px;
+}
+
+.demo-spotlight-card {
+    padding: 18px 20px;
+    border: 1px solid rgba(24, 52, 132, 0.1);
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.82);
+    box-shadow: 0 12px 28px rgba(18, 41, 111, 0.06);
+}
+
+.demo-spotlight-card strong {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--ink-strong);
+}
+
+.demo-spotlight-card p {
+    color: var(--ink);
 }
 
 .invoice-showcase-card {
@@ -1871,6 +1837,15 @@ footer a {
     margin: 0;
 }
 
+.case-study-brand {
+    margin: 10px 0 18px;
+}
+
+.case-study-brand-logo {
+    width: min(220px, 46vw);
+    height: auto;
+}
+
 .home-hero-panel .hero-actions {
     justify-content: center;
 }
@@ -2129,11 +2104,6 @@ footer a {
         grid-template-columns: 1fr;
     }
 
-    .membership-strip {
-        align-items: start;
-        flex-direction: column;
-    }
-
     .benefits-grid {
         grid-template-columns: 1fr;
     }
@@ -2142,6 +2112,7 @@ footer a {
     .home-pilot-fit-grid,
     .home-use-case-grid,
     .home-hero-strip,
+    .demo-spotlight,
     .balanced-grid-3,
     .balanced-grid-2,
     .content-duo,
@@ -2544,6 +2515,7 @@ footer a {
     .home-workflow-shell,
     .home-pilot-layout,
     .content-duo,
+    .demo-spotlight,
     .home-proof-band {
         grid-template-columns: 1fr;
     }

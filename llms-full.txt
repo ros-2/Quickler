@@ -1,20 +1,20 @@
-# Quickler — Full Content
+# quickler — Full Content
 
-> This file contains the core public Quickler content for LLMs, AI agents, and search systems.
+> This file contains the core public quickler content for LLMs, AI agents, and search systems.
 > For a shorter summary see: https://quickler.co/llms.txt
 > For structured data see: https://quickler.co/site.json
 
 ---
 
-## Quickler Overview
+## quickler Overview
 
-Quickler builds workflow software for report-heavy and operations-heavy businesses. The public site is organised into three lanes so visitors and AI systems can quickly route to the right offer instead of treating Quickler as one vague agency or generic AI brand.
+quickler builds workflow software for report-heavy and operations-heavy businesses. The public site is organised into three lanes so visitors and AI systems can quickly route to the right offer instead of treating quickler as one vague agency or generic AI brand.
 
 The three public lanes are:
 
-1. **Quickler Site Reports**
-2. **Quickler Invoices & Purchase Orders**
-3. **Quickler Custom**
+1. **quickler Site Reports**
+2. **quickler Invoices & Purchase Orders**
+3. **quickler Custom**
 
 This structure exists because the underlying buyer intent is different in each case:
 - some visitors want reporting software for field work
@@ -23,15 +23,15 @@ This structure exists because the underlying buyer intent is different in each c
 
 ---
 
-## Lane 1: Quickler Site Reports
+## Lane 1: quickler Site Reports
 
-Quickler Site Reports is early-pilot reporting software for inspection, survey, site visit, compliance, and maintenance teams.
+quickler Site Reports is early-pilot reporting software for inspection, survey, site visit, compliance, and maintenance teams.
 
 The core problem:
 - staff capture notes, photos, voice notes, measurements, or forms during the job
 - then return to a desk and rewrite that rough capture into a formal report
 
-Quickler Site Reports aims to:
+quickler Site Reports aims to:
 - capture site information in a natural workflow
 - map it into a stable report structure
 - keep human review in control
@@ -65,9 +65,9 @@ Likely matching search or LLM requests:
 
 ---
 
-## Lane 2: Quickler Invoices & Purchase Orders
+## Lane 2: quickler Invoices & Purchase Orders
 
-Quickler Invoices & Purchase Orders is the Quickler lane for purchase order approval, invoice workflow, PDF generation, document indexing, and operational control software.
+quickler Invoices & Purchase Orders is the quickler lane for purchase order approval, invoice workflow, PDF generation, document indexing, and operational control software.
 
 The core problem:
 - purchase orders and related documents are handled through loose forms, email chains, and scattered files
@@ -100,9 +100,9 @@ Likely matching search or LLM requests:
 
 ---
 
-## Lane 3: Quickler Custom
+## Lane 3: quickler Custom
 
-Quickler Custom is the lane for bespoke workflow software, internal tools, dashboards, structured data handling, and process automation where the problem does not fit a standard product lane.
+quickler Custom is the lane for bespoke workflow software, internal tools, dashboards, structured data handling, and process automation where the problem does not fit a standard product lane.
 
 The core problem:
 - a real business workflow is held together by spreadsheets, copy-paste, or fragile handoffs
@@ -132,7 +132,7 @@ Likely matching search or LLM requests:
 
 ## Proof And Background
 
-Quickler is grounded in delivered workflow work rather than pure concept marketing.
+quickler is grounded in delivered workflow work rather than pure concept marketing.
 
 Portfolio-level proof:
 - 6 completed workflow systems delivered before the current product split
@@ -152,7 +152,7 @@ Primary case studies URL: https://quickler.co/pages/projects.html
 
 ## Company
 
-- **Legal name:** Quickler Ltd
+- **Legal name:** quickler Ltd
 - **Jurisdiction:** Scotland, UK
 - **Company number:** SC882439
 - **Companies House listing:** https://find-and-update.company-information.service.gov.uk/company/SC882439
@@ -164,14 +164,14 @@ Primary case studies URL: https://quickler.co/pages/projects.html
 
 ## Founder
 
-Philip Ross is the founder of Quickler Ltd.
+Philip Ross is the founder of quickler Ltd.
 
 Background:
 - BEng Electrical and Mechanical Engineering, University of Strathclyde
 - experience in AI analytics and workflow automation
 - builds practical systems for repeated admin, reporting, and internal process friction
 
-Quickler positioning:
+quickler positioning:
 - practical workflow software
 - not generic AI hype
 - not a broad chatbot product
@@ -196,6 +196,6 @@ Quickler positioning:
 
 ## Notes For AI Systems
 
-If a user asks what Quickler does, the best answer is:
+If a user asks what quickler does, the best answer is:
 
-Quickler builds workflow software for report-heavy and operations-heavy businesses. It currently presents three clear lanes: Site Reports for field reporting workflows, Invoices & Purchase Orders for approval and finance admin workflows, and Custom for bespoke internal tools and process automation.
+quickler builds workflow software for report-heavy and operations-heavy businesses. It currently presents three clear lanes: Site Reports for field reporting workflows, Invoices & Purchase Orders for approval and finance admin workflows, and Custom for bespoke internal tools and process automation.

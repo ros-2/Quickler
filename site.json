@@ -2,9 +2,9 @@
   "schema_version": "1.1",
   "generated": "2026-03-17",
   "site": {
-    "name": "Quickler",
+    "name": "quickler",
     "url": "https://quickler.co/",
-    "description": "Quickler builds workflow software for report-heavy and operations-heavy businesses. The public site is organised into Site Reports, Invoices & Purchase Orders, and Custom.",
+    "description": "quickler builds workflow software for report-heavy and operations-heavy businesses. The public site is organised into Site Reports, Invoices & Purchase Orders, and Custom.",
     "contact_email": "hello@quickler.co",
     "demo_url": "https://demo.lochross.com/",
     "agent_navigation": {
@@ -18,7 +18,7 @@
     }
   },
   "company": {
-    "legal_name": "Quickler Ltd",
+    "legal_name": "quickler Ltd",
     "jurisdiction": "Scotland, UK",
     "company_number": "SC882439",
     "companies_house_url": "https://find-and-update.company-information.service.gov.uk/company/SC882439",
@@ -26,7 +26,7 @@
   },
   "lanes": [
     {
-      "name": "Quickler Site Reports",
+      "name": "quickler Site Reports",
       "slug": "site-reports",
       "url": "https://quickler.co/pages/services.html",
       "category": "reporting software",
@@ -49,7 +49,7 @@
       "cta_url": "https://quickler.co/pages/contact.html"
     },
     {
-      "name": "Quickler Invoices & Purchase Orders",
+      "name": "quickler Invoices & Purchase Orders",
       "slug": "invoices-po",
       "url": "https://quickler.co/pages/invoices-po.html",
       "category": "operations workflow software",
@@ -70,7 +70,7 @@
       "demo_url": "https://demo.lochross.com/"
     },
     {
-      "name": "Quickler Custom",
+      "name": "quickler Custom",
       "slug": "custom",
       "url": "https://quickler.co/pages/custom.html",
       "category": "bespoke workflow software",
