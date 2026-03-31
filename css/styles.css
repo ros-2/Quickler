@@ -2252,6 +2252,10 @@ footer a {
         border-radius: 30px;
     }
 
+    .home-hero-media {
+        order: -1;
+    }
+
     .home-hero-copy {
         justify-items: center;
         text-align: center;
@@ -2333,7 +2337,7 @@ footer a {
     }
 
     body > section#top:first-of-type {
-        padding-top: 128px !important;
+        padding-top: 112px !important;
     }
 
     .hero-content,
@@ -2384,6 +2388,11 @@ footer a {
     .hero-text {
         font-size: 1.05rem;
         margin-top: 18px;
+    }
+
+    .home-hero-panel {
+        padding: 24px 18px;
+        gap: 18px;
     }
 
     .hero-credentials {
