@@ -33,6 +33,21 @@ Checks are always scheduled **Friday morning**. The store manager also monitors 
 
 The bot walks the engineer through it, accepts a photo of the odometer, flags issues. On Monday morning the store manager gets a summary sheet: who submitted, who didn't, any issues flagged.
 
+**Trigger**
+The Friday check is bot-initiated, not user-initiated. At 10:00am Friday the bot pings every registered engineer. Engineers do not need to remember to start it.
+
+**First-time registration**
+New engineers hit a one-time registration gate before their first check. They receive an onboarding video walk-through at that point.
+
+**Mileage**
+Preferred capture method: photo of the odometer. Not typed.
+
+**Unscheduled mid-week report**
+Engineers can also trigger a check at any time mid-week if something goes wrong — van breaks down, bodywork damage, etc. This is separate from the scheduled Friday check.
+
+**Non-submission chase**
+On Monday, any engineer who did not submit by end of Friday receives a personalised voice message via the Mistral voice API rather than a plain text reminder.
+
 ### Workflow 2 — H&S Incident Reporting
 
 If an engineer has an accident, near miss or spots a hazard, they report it via WhatsApp. The bot asks the same questions as Cruden's existing form. Currently: individual PDFs completed on **simPRO Digital Forms**, then **manually added to a master tracker Excel sheet** kept on SharePoint for ISO auditing.
@@ -40,16 +55,29 @@ If an engineer has an accident, near miss or spots a hazard, they report it via 
 Engineers don't submit unless managers chase them — same compliance problem as van checks.
 
 **What Rory wants:**
-- Reports captured per incident (PDF is fine)
+- Reports captured per incident
 - Output must feed a master tracker — either automatically updating a sheet, or in a format that makes manual entry trivial
 - Records stored in a way that satisfies ISO audit requirements
 - RIDDOR incidents flagged separately
 
 The ISO tracker requirement is significant — the output format must match what they already record, or the tool won't survive an audit. Get a copy of the Excel tracker before building the template.
 
+**Channel**
+H&S runs in the same private WhatsApp thread as van checks. It is not in a group. The bot sits in a one-to-one conversation with each engineer.
+
+**Activation**
+The H&S workflow triggers automatically if any inbound message or voice note contains language associated with incidents. The model detects semantic intent — not just exact phrases like "accident" or "near miss" but related language (e.g. "hurt", "injury", "hazard", "something happened"). The engineer does not need to know a trigger word.
+
+**Fields**
+All fields are mandatory: reporter name, time of incident (defaults to now if not specified), what happened, how it happened, photos.
+
+**Output**
+MVP: XSL output formatted to match the existing ISO Excel master tracker exactly — engineers or managers copy-paste rows in. Individual PDFs are not the primary output.
+Stretch: generate a clean HTML version as an alternative format.
+
 ### Workflow 3 — TBD
 
-To be identified at the Cruden meeting. Candidates: risk assessments (which would replace their current RAMS App subscription), toolbox talk confirmations, timesheet submission, job arrival/departure logging.
+To be identified at the Cruden meeting. Candidates: **toolbox talk** (Cruden run a weekly discussion covering what went well and what went badly — this is a strong fit for the same system), risk assessments (which would replace their current RAMS App subscription), timesheet submission, job arrival/departure logging.
 
 ---
 
@@ -127,22 +155,23 @@ Each workflow is a self-contained file. New workflows = new files only.
 
 ### Per-Customer Isolation
 
-- Dedicated Twilio number per customer (Cruden gets their own; demo keeps existing)
+- One shared Twilio number across customers (simpler to operate at this scale)
 - Per-firm SMTP credentials (use Cruden's own mail server -- looks like it comes from them)
-- Per-firm config in DB: manager email, RIDDOR contact, Twilio number, SMTP settings
+- Per-firm config in DB: manager email, RIDDOR contact, SMTP settings
 
 ### Build Estimate
 
 | Component | Hours |
 |-----------|-------|
 | Architecture refactor + per-firm config | 8h |
-| Van check production rebuild (photo OCR, self-registration) | 12h |
-| H&S incident workflow | 8h |
-| H&S Typst template | ~0h (Claude writes it) |
+| Van check production rebuild (scheduled trigger, photo OCR, self-registration, unscheduled mid-week flow) | 14h |
+| H&S incident workflow (semantic keyword activation) | 8h |
+| H&S XSL output (matching ISO master tracker) | 4h |
+| Mistral voice API integration (Monday non-submission chase) | 4h |
 | Email notifications + weekly van digest | 4h |
 | CSV/JSON export endpoint | 2h |
 | Deployment + end-to-end testing | 6h |
-| **Total** | **~40h** |
+| **Total** | **~50h** |
 
 Manager dashboard (web UI to view/filter reports) is TBD -- adds ~10h if Rory wants it.
 
@@ -155,12 +184,14 @@ simPRO has a full REST/JSON-RPC API (OAuth 1.0) supporting job creation, asset m
 | File | Action |
 |------|--------|
 | `src/lib/workflows/__init__.py` | New -- dispatcher |
-| `src/lib/workflows/van_check.py` | New -- production rebuild |
-| `src/lib/workflows/hs_incident.py` | New -- H&S workflow |
+| `src/lib/workflows/van_check.py` | New -- production rebuild (includes scheduled trigger, unscheduled mid-week flow) |
+| `src/lib/workflows/hs_incident.py` | New -- H&S workflow (semantic activation) |
 | `src/lib/report_types/hs_incident.py` | New -- field schema |
-| `src/templates/hs_incident.typ` | New -- Typst template |
+| `src/templates/hs_incident.xsl` | New -- XSL output matching ISO tracker |
+| `src/lib/scheduler.py` | New -- Friday auto-ping and Monday chase |
+| `src/lib/voice_chase.py` | New -- Mistral voice API for non-submission reminders |
 | `src/app.py` | Export endpoint; dispatcher integration |
-| `src/lib/database.py` | Per-firm config fields |
+| `src/lib/database.py` | Per-firm config (remove Twilio per-firm field) |
 | `src/lib/workflow.py` | Remove van check (moved to module) |
 
 ---
