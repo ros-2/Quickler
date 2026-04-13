@@ -111,33 +111,14 @@
     </nav>
 
     <main id="main-content" data-agent-page="contact">
-    <section id="top" aria-labelledby="contact-page-title">
-        <div class="page-shell ask-hero-shell">
-            <span class="eyebrow">Ask quickler</span>
-            <h1 id="contact-page-title">Ask a quick question or go straight to the form.</h1>
-            <p class="page-lede">Use the question box for a fast answer on fit, pilots, or what quickler does. If you already know what you want to ask, skip straight to the form.</p>
-            <div class="hero-actions">
-                <a href="#ask-assistant" class="btn btn-primary" data-cta="ask-quickler-assistant">Ask a question now</a>
-                <a href="#contact-form-section" class="btn btn-secondary" data-cta="ask-quickler-contact-form">See contact form</a>
-            </div>
-        </div>
-    </section>
-
     <section class="section-tight" id="ask-assistant" aria-labelledby="ask-assistant-title">
-        <div class="ask-grid">
-            <div class="contact-panel ask-panel">
-                <span class="section-label">Quick Questions</span>
-                <h2 id="ask-assistant-title">Start here if you want a fast answer.</h2>
-                <p class="contact-copy">This is best for simple questions about fit, pilots, and how quickler works. If the question needs a proper look, use the form.</p>
-                <ul>
-                    <li>Good for fit, pilot, and product questions</li>
-                    <li>Short answers only</li>
-                    <li>If it cannot answer properly, use the form</li>
-                </ul>
-            </div>
-
+        <div class="single-panel-layout">
             <div class="contact-form-shell ask-assistant-shell">
                 <div class="ask-assistant-card" data-faq-assistant>
+                    <div class="form-card-header">
+                        <span class="section-label">Quick Questions</span>
+                        <h2 id="ask-assistant-title">Ask quickler a quick question.</h2>
+                    </div>
                     <div class="ask-assistant-header">
                         <strong>quickler assistant</strong>
                         <span class="ask-assistant-counter" data-faq-remaining>4 answers left</span>
@@ -165,20 +146,13 @@
     </section>
 
     <section class="section-tight" id="contact-form-section" aria-labelledby="contact-form-section-title">
-        <div class="contact-grid">
-            <div class="contact-panel">
-                <span class="eyebrow">Contact form</span>
-                <h2 id="contact-form-section-title">Tell quickler what is not working.</h2>
-                <p class="contact-copy">A good enquiry describes one workflow, how often it happens, where it goes wrong, and whether examples can be shared.</p>
-                <ul>
-                    <li>Email directly: <a href="mailto:hello@quickler.co">hello@quickler.co</a></li>
-                    <li>Useful for repeated reporting, site visits, compliance paperwork, document-heavy workflows, and awkward operational admin</li>
-                    <li>Typical response time: within one working day</li>
-                    <li>One workflow first is the best starting point</li>
-                </ul>
-            </div>
-
+        <div class="single-panel-layout">
             <div class="contact-form-shell">
+                <div class="form-card-header">
+                    <span class="eyebrow">Contact form</span>
+                    <h2 id="contact-form-section-title">Tell quickler what is not working.</h2>
+                    <p class="contact-copy">Email directly: <a href="mailto:hello@quickler.co">hello@quickler.co</a></p>
+                </div>
                 <form class="contact-form" id="contact-form" action="https://formspree.io/f/mjknoeqd" method="POST" data-agent-form="quickler-contact" data-async-form="quickler-contact" data-form-state="idle" data-success-message="Sent! I'll reply within 24 hours" data-success-status="Form submitted successfully" data-submit-button="#submit-btn" aria-describedby="contact-form-help contact-form-status">
                     <div class="form-group">
                         <label for="name">Your name</label>
