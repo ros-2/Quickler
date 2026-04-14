@@ -237,16 +237,21 @@ nav {
 .nav-menu {
     display: flex;
     align-items: center;
-    gap: 8px;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+    min-width: 0;
+    gap: 4px;
+    flex-wrap: nowrap;
 }
 
 .nav-menu a {
     text-decoration: none;
     color: var(--ink-soft);
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     font-weight: 600;
-    padding: 11px 14px;
+    padding: 10px 12px;
     border-radius: 999px;
+    white-space: nowrap;
     transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
@@ -700,11 +705,20 @@ section#top {
     align-items: stretch;
 }
 
+.about-current-build-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: min(100%, 1180px);
+    margin: 0 auto;
+}
+
 .content-duo {
     display: grid;
-    grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+    grid-template-columns: 1fr 1fr;
     gap: 18px;
     align-items: stretch;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section-frame {
@@ -756,7 +770,7 @@ section#top {
 
 .demo-spotlight {
     display: grid;
-    grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
     align-items: stretch;
 }
@@ -1703,6 +1717,48 @@ footer a {
     margin-top: 18px;
 }
 
+.about-page-intro {
+    width: min(100%, 820px);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-page-intro h1 {
+    max-width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-page-intro .page-lede {
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-short-version-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    max-width: 960px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.about-builds-now {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 860px) {
+    .about-short-version-grid {
+        grid-template-columns: 1fr;
+    }
+    .about-builds-now {
+        grid-template-columns: 1fr;
+    }
+}
+
 .page-lede {
     margin-top: 8px;
 }
@@ -1827,10 +1883,13 @@ footer a {
 
 .founder-layout {
     display: grid;
-    grid-template-columns: minmax(0, 1.55fr) minmax(280px, 0.8fr);
+    grid-template-columns: 1fr 1fr;
     gap: clamp(24px, 4vw, 44px);
     align-items: start;
     margin-top: 30px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .founder-article {
@@ -1967,7 +2026,7 @@ footer a {
 .home-hero-panel {
     width: min(100%, 1140px);
     display: grid;
-    grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
+    grid-template-columns: 1fr 1fr;
     gap: clamp(24px, 3vw, 38px);
     align-items: start;
     padding: clamp(30px, 4.5vw, 56px);
@@ -2329,7 +2388,7 @@ footer a {
     box-shadow: 0 14px 30px rgba(47, 107, 255, 0.2);
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1040px) {
     nav {
         top: max(10px, env(safe-area-inset-top, 0px));
         margin-top: 12px;
@@ -2877,6 +2936,24 @@ footer a {
 }
 
 @media (min-width: 981px) and (max-width: 1200px) {
+    nav {
+        padding: 10px 14px 10px 16px;
+        gap: 12px;
+    }
+
+    .nav-name img {
+        height: 34px;
+    }
+
+    .nav-menu {
+        gap: 4px;
+    }
+
+    .nav-menu a {
+        font-size: 0.9rem;
+        padding: 10px 11px;
+    }
+
     .hero {
         grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
     }
@@ -2908,6 +2985,10 @@ footer a {
 
     .card-link-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .about-current-build-grid {
+        grid-template-columns: 1fr;
     }
 }
 

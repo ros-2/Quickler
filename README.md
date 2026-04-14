@@ -6,7 +6,7 @@ Public website for quickler Ltd and quickler Reports, a chat-first technical rep
 
 ## Project Overview
 
-This is a static website built with vanilla HTML, CSS, and JavaScript, hosted on GitHub Pages. The site presents quickler Reports, supporting case studies, legal pages, and contact information for pilot enquiries.
+This is a static website built with vanilla HTML, CSS, and JavaScript, hosted on GitHub Pages. The site presents quickler Reports, supporting case studies, legal pages, and contact information for workflow enquiries.
 
 ### Key Features
 

@@ -42,14 +42,14 @@ Best fit:
 - operations teams with repeated document-heavy handoffs
 - any repeated workflow with stable structure and clear review points
 
-Good pilot signals:
+Good fit signals:
 - one repeated report type, document pack, or workflow already matters to the business
 - there is enough reporting volume to justify fixing the workflow
 - the business can share real examples
 - review and sign-off matter
 
 Primary URL: https://quickler.co/pages/services.html
-Pilot application URL: https://quickler.co/pages/contact.html
+Contact URL: https://quickler.co/pages/contact.html
 
 Likely matching search or LLM requests:
 - workflow systems for operations teams

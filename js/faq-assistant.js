@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const answers = {
         fit: 'quickler is a fit for teams with repeated workflows where the work happens first and the report, paperwork, or follow-up still gets rebuilt later.',
         product: 'quickler is about repeated workflows where the work happens first and the report, paperwork, or next action still gets rebuilt later.',
-        pilots: 'Pilots start with one repeated workflow, a short explanation of how it runs now, and a few real examples if those can be shared.',
+        start: 'Work usually starts with one repeated workflow, a short explanation of how it runs now, and a few real examples if those can be shared.',
         ai_agents: 'Some quickler workflows need more context than a normal form or chatbot can hold. In those cases the system should load the right files, rules, and workflow role before doing useful work.',
         stage: 'quickler is early. The current focus is a few narrow workflows done properly rather than a wide platform with thin claims.',
         engineers: 'No. Engineers can be a fit, but the broader pattern is any repeated workflow where useful work gets followed by too much manual write-up or admin.',
@@ -26,9 +26,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const intents = [
         { key: 'fit', patterns: ['who is quickler for', 'who is this for', 'fit', 'good fit', 'who is it for', 'best fit'] },
         { key: 'product', patterns: ['what does quickler do', 'what do you do', 'what actually do', 'what is quickler', 'what does it do'] },
-        { key: 'pilots', patterns: ['pilot', 'pilots', 'how do pilots start', 'how does a pilot start', 'start', 'early pilot'] },
+        { key: 'start', patterns: ['how does work start', 'how do you start', 'start', 'workflow start'] },
         { key: 'ai_agents', patterns: ['ai agent', 'ai agents', 'agent', 'agents', 'copilot', 'assistant'] },
-        { key: 'stage', patterns: ['what stage', 'how early', 'early', 'current stage', 'mvp', 'pilot stage'] },
+        { key: 'stage', patterns: ['what stage', 'how early', 'early', 'current stage', 'mvp'] },
         { key: 'engineers', patterns: ['engineer', 'engineers only', 'only for engineers'] },
         { key: 'not_ai_writer', patterns: ['ai writing tool', 'writing tool', 'chatgpt', 'just another ai', 'just ai'] },
         { key: 'contact', patterns: ['price', 'cost', 'quote', 'my workflow', 'my business', 'book', 'speak', 'talk', 'contact'] }
