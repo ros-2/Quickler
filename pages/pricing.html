@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="/js/cookie-consent.js" defer></script>
+
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | quickler</title>
+    <meta name="title" content="Pricing | quickler">
+    <meta name="description" content="Simple monthly pricing for Quickler. Four tiers from Solo to Platoon. UK Direct Debit. Cancel any time. Pay annually and save 10%.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://quickler.co/pages/pricing.html">
+    <meta property="og:title" content="Pricing | quickler">
+    <meta property="og:description" content="Simple monthly pricing. Four tiers. UK Direct Debit. Save 10% annually.">
+    <meta property="og:locale" content="en_GB">
+    <link rel="canonical" href="https://quickler.co/pages/pricing.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <style>
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 18px;
+            margin-top: 36px;
+        }
+        .pricing-card {
+            background: #ffffff;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            border-radius: 18px;
+            padding: 28px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            box-shadow: 0 2px 14px rgba(15, 23, 42, 0.04);
+        }
+        .pricing-card.is-popular {
+            border-top: 3px solid #F43F8C;
+            position: relative;
+        }
+        .pricing-card.is-popular::before {
+            content: "Most popular";
+            position: absolute;
+            top: -12px;
+            left: 24px;
+            background: #F43F8C;
+            color: #ffffff;
+            font-size: 0.72rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 8px;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+        .pricing-card h3 {
+            margin: 0;
+            font-size: 1.4rem;
+            color: #0d1a3a;
+        }
+        .pricing-desc {
+            color: #67789e;
+            font-size: 0.92rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+        .pricing-metric {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 2px;
+        }
+        .pricing-metric-value {
+            font-size: 2.4rem;
+            font-weight: 800;
+            line-height: 1;
+            color: #0d1a3a;
+        }
+        .pricing-metric-label {
+            font-size: 0.78rem;
+            color: #67789e;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            font-weight: 600;
+        }
+        .pricing-price {
+            display: flex;
+            align-items: baseline;
+            gap: 4px;
+            border-top: 1px solid rgba(15, 23, 42, 0.06);
+            padding-top: 18px;
+            margin-top: 4px;
+        }
+        .pricing-price-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #0d1a3a;
+        }
+        .pricing-price-suffix {
+            font-size: 0.88rem;
+            color: #67789e;
+        }
+        .pricing-cta {
+            display: block;
+            text-align: center;
+            background: #1a52d0;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+        .pricing-cta:hover {
+            background: #0d3ea8;
+        }
+        .annual-banner {
+            margin-top: 40px;
+            padding: 28px;
+            background: linear-gradient(135deg, rgba(244, 63, 140, 0.08), rgba(124, 58, 237, 0.08));
+            border: 1px solid rgba(244, 63, 140, 0.2);
+            border-radius: 18px;
+            text-align: center;
+        }
+        .annual-banner h2 {
+            margin: 0 0 8px;
+            font-size: 1.4rem;
+            color: #0d1a3a;
+        }
+        .annual-banner p {
+            margin: 0;
+            color: #67789e;
+            font-size: 0.98rem;
+            line-height: 1.6;
+        }
+        .annual-banner a {
+            color: #1a52d0;
+            font-weight: 600;
+        }
+        .reassurance-list {
+            margin-top: 36px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+        .reassurance-item {
+            padding: 20px 22px;
+            background: #f8fafc;
+            border-radius: 14px;
+            font-size: 0.95rem;
+            color: #213055;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/" class="nav-name">
+            <img src="/assets/logos/quickler-logo.svg" alt="quickler" width="179" height="42">
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <div class="nav-menu">
+            <a href="/">Home</a>
+            <a href="/pages/about.html">About</a>
+            <a href="/pages/services.html">Workflows</a>
+            <a href="/pages/pricing.html" aria-current="page">Pricing</a>
+            <a href="/pages/contact.html">Ask quickler</a>
+            <a href="https://app.quickler.co/login">Login</a>
+        </div>
+    </nav>
+
+    <section id="top">
+        <div class="page-shell">
+            <span class="eyebrow">Pricing</span>
+            <h1>Four tiers. One platform. No surprises.</h1>
+            <p class="page-lede">Pay monthly. Cancel any time. UK Direct Debit only. Every tier includes the full Quickler platform — WhatsApp intake, workflows, reports, dashboard.</p>
+        </div>
+    </section>
+
+    <section class="section-tight">
+        <div class="page-shell">
+            <div class="pricing-grid">
+
+                <div class="pricing-card">
+                    <h3>Solo</h3>
+                    <p class="pricing-desc">For sole traders and one-person operations.</p>
+                    <div class="pricing-metric">
+                        <span class="pricing-metric-value">1</span>
+                        <span class="pricing-metric-label">Engineer</span>
+                    </div>
+                    <div class="pricing-metric">
+                        <span class="pricing-metric-value">3</span>
+                        <span class="pricing-metric-label">Workflows</span>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="pricing-price-value">&pound;50</span>
+                        <span class="pricing-price-suffix">/month</span>
+                    </div>
+                    <a href="https://app.quickler.co/signup" class="pricing-cta" data-cta="pricing-solo">Choose Solo</a>
+                </div>
+
+                <div class="pricing-card is-popular">
+                    <h3>Squad</h3>
+                    <p class="pricing-desc">For small teams getting started.</p>
+                    <div class="pricing-metric">
+                        <span class="pricing-metric-value">4</span>
+                        <span class="pricing-metric-label">Engineers</span>
+                    </div>
+                    <div class="pricing-metric">
+                        <span class="pricing-metric-value">5</span>
+                        <span class="pricing-metric-label">Workflows</span>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="pricing-price-value">&pound;100</span>
+                        <span class="pricing-price-suffix">/month</span>
+                    </div>
+                    <a href="https://app.quickler.co/signup" class="pricing-cta" data-cta="pricing-squad">Choose Squad</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Section</h3>
+                    <p class="pricing-desc">For growing firms running several workflows.</p>
+                    <div class="pricing-metric">
+                        <span class="pricing-metric-value">12</span>
+                        <span class="pricing-metric-label">Engineers</span>
+                    </div>
+                    <div class="pricing-metric">
+                        <span class="pricing-metric-value">8</span>
+                        <span class="pricing-metric-label">Workflows</span>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="pricing-price-value">&pound;140</span>
+                        <span class="pricing-price-suffix">/month</span>
+                    </div>
+                    <a href="https://app.quickler.co/signup" class="pricing-cta" data-cta="pricing-section">Choose Section</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Platoon</h3>
+                    <p class="pricing-desc">For established firms with serious scale.</p>
+                    <div class="pricing-metric">
+                        <span class="pricing-metric-value">30</span>
+                        <span class="pricing-metric-label">Engineers</span>
+                    </div>
+                    <div class="pricing-metric">
+                        <span class="pricing-metric-value">10</span>
+                        <span class="pricing-metric-label">Workflows</span>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="pricing-price-value">&pound;300</span>
+                        <span class="pricing-price-suffix">/month</span>
+                    </div>
+                    <a href="https://app.quickler.co/signup" class="pricing-cta" data-cta="pricing-platoon">Choose Platoon</a>
+                </div>
+
+            </div>
+
+            <div class="annual-banner">
+                <h2>Pay annually, save 10%.</h2>
+                <p>Same price ladder, one payment a year, ten per cent off. Email <a href="mailto:philip@quickler.co">philip@quickler.co</a> to set up annual billing.</p>
+            </div>
+
+            <div class="reassurance-list">
+                <div class="reassurance-item"><strong>No setup fees or hidden charges.</strong> What you see above is the whole price.</div>
+                <div class="reassurance-item"><strong>Every tier includes the full platform.</strong> Workflows, reports, WhatsApp intake, dashboard, auto-updates.</div>
+                <div class="reassurance-item"><strong>Tiered by team size and process count.</strong> Move up a tier when you need more. Move down when you do not.</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-shell">
+            <p>&copy; 2026 Quickler Ltd (SC882439). 5 South Charlotte Street, Edinburgh, EH2 4AN.</p>
+            <nav aria-label="Footer">
+                <a href="/pages/about.html">About</a>
+                <a href="/pages/privacy.html">Privacy</a>
+                <a href="/pages/terms.html">Terms</a>
+                <a href="/pages/contact.html">Ask quickler</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="/js/mobile-nav.js" defer></script>
+</body>
+</html>
