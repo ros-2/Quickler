@@ -59,7 +59,7 @@
         <div class="card-link-grid">
             <article class="card-link">
                 <span class="card-link-kicker">Last updated</span>
-                <h3 class="card-link-title">17 April 2026</h3>
+                <h3 class="card-link-title">18 April 2026</h3>
                 <p class="card-link-copy">Covers the quickler website, the contact form, and the quickler workflow product (WhatsApp capture, dashboard, generated reports).</p>
             </article>
             <article class="card-link">
@@ -103,6 +103,7 @@
                     <li><strong>Anthropic PBC</strong> (United States) — large-language-model processing of captured text and transcripts.</li>
                     <li><strong>Groq, Inc.</strong> (United States) — primary speech-to-text transcription of voice notes via the Whisper model.</li>
                     <li><strong>OpenAI, L.L.C.</strong> (United States) — fallback speech-to-text transcription of voice notes via the Whisper API, used when the primary provider is unavailable.</li>
+                    <li><strong>Langfuse GmbH</strong> (Germany / United States) — observability for AI calls. Only metadata is transmitted (firm identifier, session identifier, model name, token counts and timing). The content of engineer messages, transcripts, and generated reports is never sent to Langfuse.</li>
                     <li><strong>GoCardless Ltd</strong> (United Kingdom) — direct-debit subscription billing.</li>
                     <li><strong>Functional Software, Inc. (trading as Sentry)</strong> (United States) — application error monitoring and diagnostics. Stack traces may incidentally include fragments of user input where an error occurs during processing.</li>
                     <li><strong>GitHub, Inc.</strong> (United States) — hosting of the public website (GitHub Pages).</li>
@@ -115,12 +116,18 @@
 
                 <h3>How long data is kept</h3>
                 <p>Enquiry data is kept only as long as it is useful for handling the enquiry, any follow-up discussions, and ordinary business record-keeping. As a working rule, non-client enquiry records are normally not kept longer than 24 months after the last meaningful contact unless there is a good reason to keep them longer.</p>
+                <p>For workflow product customers: engineer messages, photos, voice notes, and transcripts are retained for the duration of the subscription, plus a grace period of up to 90 days after termination to allow data export. Approved, archived report PDFs are retained until the customer deletes them. Application logs are retained for 30 days. Database backups are retained for 30 days. A customer can delete any engineer's data immediately by removing them from the Engineers list in the dashboard, which triggers a cascading delete of their WhatsApp sessions, recordings, and PDFs.</p>
 
                 <h3>International transfers</h3>
-                <p>Some sub-processors are based outside the UK (notably in the EEA and the United States). Where personal data is transferred internationally, quickler relies on the UK International Data Transfer Agreement, the UK Addendum to the EU Standard Contractual Clauses, or an applicable adequacy decision, as appropriate to the destination country.</p>
+                <p>Some sub-processors are based outside the UK (notably in the EEA and the United States). Where personal data is transferred internationally, quickler relies on the following mechanisms, as appropriate to the destination country:</p>
+                <ul>
+                    <li><strong>UK-US Data Bridge</strong> (an extension of the EU-US Data Privacy Framework, in force since 12 October 2023) for transfers to US-based sub-processors that are certified under the Framework. Anthropic, Twilio, OpenAI, Sentry (Functional Software), GitHub, Formspree, and Google are relied on under this mechanism where their DPF certification applies.</li>
+                    <li>The <strong>UK International Data Transfer Agreement</strong>, or the <strong>UK Addendum to the EU Standard Contractual Clauses</strong>, for transfers that are not covered by an adequacy decision or the Data Bridge.</li>
+                    <li>UK / EEA <strong>adequacy decisions</strong> for transfers within the EEA (for example, Hetzner hosting in Germany).</li>
+                </ul>
 
                 <div class="detail-note">
-                    Where quickler processes personal data on behalf of a paying customer (for example, data captured via WhatsApp by the customer's engineers), the customer is the data controller and quickler is the data processor. The processing is governed by the data-processing terms set out in the <a href="/pages/customer-terms.html">Customer Terms</a>.
+                    Where quickler processes personal data on behalf of a paying customer (for example, data captured via WhatsApp by the customer's engineers), the customer is the data controller and quickler is the data processor. The processing is governed by the data-processing terms set out in the <a href="/pages/customer-terms.html">Customer Terms</a>. A standalone Data Processing Agreement is available to paying customers on request from <a href="mailto:philip@quickler.co">philip@quickler.co</a> for sharing with their own compliance or procurement team.
                 </div>
 
                 <h3>Your rights</h3>
@@ -138,7 +145,7 @@
         <div class="footer-social">
             <a class="footer-social-link" href="https://www.linkedin.com/company/quickler/" target="_blank" rel="noopener noreferrer"><span>quickler on LinkedIn</span></a>
         </div>
-        <div class="site-version" style="text-align:center;font-size:0.75rem;opacity:0.55;margin-top:6px;">site version 118</div>
+        <div class="site-version" style="text-align:center;font-size:0.75rem;opacity:0.55;margin-top:6px;">site version 119</div>
     </footer>
     <script src="/js/analytics-events.js"></script>
 </body>
